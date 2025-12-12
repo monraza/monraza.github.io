@@ -7,7 +7,7 @@ categories: ["AI & Programming"]
 tags: ["ai", "programming", "natural-language", "productivity", "audio", "video"]
 
 # Media URLs - Replace with your actual media files
-audio_url: ""
+audio_url: "/podcasts/Anyone_Can_Be_a_Programmer_Podcast.m4a"
 video_url: ""
 ---
 

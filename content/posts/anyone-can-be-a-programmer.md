@@ -12,7 +12,7 @@ video_url: ""
 ---
 
 
-I've been building software for a decade and a half, and I've seen some major transformations in software programming. There is another major transformation happening right now; the use of AI to write code and develop softwares. Popularly known as Vibe-Coding - programming by feel. Using AI assited programming, anyone can turn their ideas into software without writing one single line of traditional code. It actually feels magical to be honest. Describing what we want in plain language,becomes fully working website within minutes. Years of syntax memorization, understanding complex alogrithms and frameworks, debugging cryptic errors, seems irrelevant now. Our ideas and domain expertise matter more than our coding background now. AI Tools like Claude and ChatGPT, have changed who can be a programmer and how programming works.
+I've been building software for a decade and a half, and I've seen some major transformations in software programming. There is another major transformation happening right now; the use of AI to write code and develop softwares. Popularly known as Vibe Coding: programming by feel. Using AI assited programming, anyone can turn their ideas into software without writing one single line of traditional code. It actually feels magical to be honest. Describing what we want in plain language,becomes fully working website within minutes. Years of syntax memorization, understanding complex alogrithms and frameworks, debugging cryptic errors, seems irrelevant now. Our ideas and domain expertise matter more than our coding background now. AI Tools like Claude and ChatGPT, have changed who can be a programmer and how programming works.
 
 At first glance, this seems revolutionary, a leap in software programming. But is it really the next evolution or are we witnessing a temporary trend. To answer this, we need to first understand historical evolution of software programming.
 
@@ -50,11 +50,11 @@ Traditional programming layers are deterministic. When Python calls a C function
 
 AI-generated code? It's different every time. Ask for a "user authentication system" five times, and you'll get five different implementations. Some might be secure, others might have vulnerabilities. Some might be efficient, others might be resource hogs. The AI is making creative decisions, not following predetermined rules.
 
-This isn't just variability - it's fundamental unpredictability. The AI might take shortcuts, skip error handling, or ignore security best practices. It often optimizes for "making it work quickly" rather than "making it work correctly."
+This isn't just variability, it's fundamental unpredictability. The AI might take shortcuts, skip error handling, or ignore security best practices. It often optimizes for "making it work quickly" rather than "making it work correctly."
 
 **The Input Ambiguity**
 
-Traditional languages have syntax rules. Break them, and your code won't run. This seems limiting, but it's actually liberating - everyone writes `for loops` the same way, so everyone can read them.
+Traditional languages have syntax rules. Break them, and your code won't run. This seems limiting, but it's actually liberating, everyone writes `for loops` the same way, so everyone can read them.
 
 With vibe coding, there are no rules. One person writes a paragraph explaining their needs. Another writes three words. Someone with security knowledge mentions SQL injection prevention; someone without it doesn't know to ask. The quality of output directly depends on the quality of input, but there's no standard for what "quality input" means.
 
@@ -79,26 +79,26 @@ The goal of Natural Langauge Programming is to bring engineering discipline to A
 
 ### Adopting Software Engineering mindset
 
-Embracing Vibe Coding means adopting an engineering mindset rather than a "quick fix" mentality. It combines strategic thinking with technical awareness. We're not just users of AI tools - we're architects of solutions. 
+Embracing Vibe Coding means adopting an engineering mindset rather than a "quick fix" mentality. It combines strategic thinking with technical awareness. We're not just users of AI tools, we're architects of solutions. 
 
-**Question everything the AI produces.** Start by developing a questioning mindset. When AI generates code, examine it critically. Does it handle edge cases? Is it secure? Will it scale? This isn't about doubting the AI - it's about ensuring our solutions are robust. Think of yourself as the quality gatekeeper.
+**Question everything the AI produces.** Start by developing a questioning mindset. When AI generates code, examine it critically. Does it handle edge cases? Is it secure? Will it scale? This isn't about doubting the AI, it's about ensuring our solutions are robust. Think of yourself as the quality gatekeeper.
 
 **Embrace the "why" behind decisions.** Understanding the "why" behind code choices makes us better builders. When the AI suggests an approach, explore the trade-offs. What alternatives exist? What are the implications for performance, maintainability, and security? This knowledge helps us make informed decisions and request better solutions.
 
-**Think beyond the immediate problem.** Consider the broader context of your solutions. Software doesn't exist in isolation - it connects with other systems, serves real users, and evolves over time. By thinking systematically, we create solutions that aren't just functional today but remain valuable tomorrow.
+**Think beyond the immediate problem.** Consider the broader context of your solutions. Software doesn't exist in isolation, it connects with other systems, serves real users, and evolves over time. By thinking systematically, we create solutions that aren't just functional today but remain valuable tomorrow.
 
-**Adopt a security-first mindset.** Security thinking is now part of everyone's toolkit. We validate inputs, protect data, and assume our code will face challenges. This isn't paranoia - it's professional responsibility. By building security awareness, we create software that earns and maintains user trust.
+**Adopt a security-first mindset.** Security thinking is now part of everyone's toolkit. We validate inputs, protect data, and assume our code will face challenges. This isn't paranoia, it's professional responsibility. By building security awareness, we create software that earns and maintains user trust.
 
 **Value simplicity and clarity.** Embrace simplicity as a design principle. The best solutions are often the most elegant. If the AI generates complex code, we have the power to request cleaner alternatives. Clear, maintainable code is a gift to our future selves and our collaborators.
 
 
 ### Following SDLC Principles
 
-Software Development Lifecycle (SDLC) isn't just for traditional programmers - it's a powerful framework that helps us create better software regardless of how we build it. And trust me, following these principles will save you so much headache down the road.
+Software Development Lifecycle (SDLC) isn't just for traditional programmers, it's a powerful framework that helps us create better software regardless of how we build it. And trust me, following these principles will save you so much headache down the road.
 
-**Planning Phase:** Start with clarity about what you're building. Document your product requirements, define success criteria, and identify key stakeholders. This isn't bureaucracy - it's setting yourself up for success. When we know exactly what we want to achieve, we can communicate it clearly to the AI. Create test scenarios early: "When this happens, the system should respond this way." This preparation transforms vague ideas into concrete specifications.
+**Planning Phase:** Start with clarity about what you're building. Document your product requirements, define success criteria, and identify key stakeholders. This isn't bureaucracy, it's setting yourself up for success. When we know exactly what we want to achieve, we can communicate it clearly to the AI. Create test scenarios early: "When this happens, the system should respond this way." This preparation transforms vague ideas into concrete specifications.
 
-**Design Phase:** Visualize your system's architecture. Create the database design and user interface mockups. How will components interact? What's the user journey? Define your non-functional requirements - performance targets, security standards, accessibility needs. Share these with the AI as foundational context. You're not just requesting code; you're architecting a solution.
+**Design Phase:** Visualize your system's architecture. Create the database design and user interface mockups. How will components interact? What's the user journey? Define your non-functional requirements, performance targets, security standards, accessibility needs. Share these with the AI as foundational context. You're not just requesting code; you're architecting a solution.
 
 **Development Phase:** Craft your prompts strategically. Break complex requirements into clear, logical steps. Instead of "build an app," try something like: "Create a user registration system with email validation, bcrypt password hashing, and rate limiting for spam prevention." Precision in equals precision out.
 
@@ -113,7 +113,7 @@ We're standing at a genuine inflection point. The democratization of programming
 
 Natural Language Coding represents our best path forward. It acknowledges that the barriers to entry should be lower while insisting that the bar for quality remains high. Your domain expertise becomes your programming superpower, but it's channeled through proven engineering practices.
 
-Think about what this enables. Medical professionals building tools that actually understand clinical workflows. Teachers creating educational software that reflects real classroom needs. Scientists developing research tools without waiting months for IT support. This isn't just about more programmers - it's about better software because it's built by people who deeply understand the problems.
+Think about what this enables. Medical professionals building tools that actually understand clinical workflows. Teachers creating educational software that reflects real classroom needs. Scientists developing research tools without waiting months for IT support. This isn't just about more programmers, it's about better software because it's built by people who deeply understand the problems.
 
 But this future requires all of us to step up. If you're using AI to generate code, you're a programmer now. That means taking responsibility for what you build, testing it thoroughly, and ensuring it's safe for users. By combining AI's accessibility with engineering rigor, we can build better software faster than ever before. But only if we remember that with great power comes great responsibility.
 

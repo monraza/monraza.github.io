@@ -37,7 +37,7 @@
 
 [[main]]
   name = "Linkedin"
-  url = "https://github.com/monraza"
+  url = "https://linkedin.com/in/monisraza"
   weight = 30
   [main.params]
     icon = "linkedin"

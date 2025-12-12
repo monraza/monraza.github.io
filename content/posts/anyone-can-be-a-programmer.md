@@ -2,13 +2,13 @@
 title: "Anyone Can Be a Programmer"
 date: 2025-08-09T10:00:00Z
 draft: false
-summary: "We've evolved from punch cards to Python, and now AI lets us code in plain English, but this final leap comes with unprecedented responsibility upon us as programmers. I trace programming's 70-year journey to Natural Language Programming and share how to harness this revolutionary power while building software that's secure, scalable, and production-ready."
+summary: "We've evolved from punch cards to Python, and now AI lets us code in plain English, but this final leap comes with unprecedented responsibility upon us as programmers. I trace programming's 70-year journey to Natural Language Coding and share how to harness this revolutionary power while building software that's secure, scalable, and production-ready."
 categories: ["AI & Programming"]
 tags: ["ai", "programming", "natural-language", "productivity", "audio", "video"]
 
 # Media URLs - Replace with your actual media files
-audio_url: "/podcasts/Anyone_Can_Be_a_Programmer_Podcast.m4a"
-video_url: "/videos/Anyone_Can_Be_a_Programmer_Video.mp4"
+audio_url: ""
+video_url: ""
 ---
 
 
@@ -52,7 +52,7 @@ AI-generated code? It's different every time. Ask for a "user authentication sys
 
 This isn't just variability - it's fundamental unpredictability. The AI might take shortcuts, skip error handling, or ignore security best practices. It often optimizes for "making it work quickly" rather than "making it work correctly."
 
-### The Input Ambiguity
+**The Input Ambiguity**
 
 Traditional languages have syntax rules. Break them, and your code won't run. This seems limiting, but it's actually liberating - everyone writes `for loops` the same way, so everyone can read them.
 
@@ -68,12 +68,12 @@ Abstracting away syntax to focus on intent is the logical next step. The democra
 
 But only if we can minimize the non-determinism and align vibe coding with traditional programming principles. The evolution of programming has always maintained certain invariants: predictability, reliability, maintainability. We need structure, standards, and engineering rigor applied to this new paradigm. We need to evolve, not abandon everything we've learned. 
 
-Here's what I believe we need: a middle ground where the accessibility of vibe coding meets with the rigor of software engineering. I call it **Natural Language Programming**.
+Here's what I believe we need: a middle ground where the accessibility of vibe coding meets with the rigor of software engineering. I call it **Natural Language Coding**.
 This isn't just rebranding vibe coding. It's a fundamental shift in how we think about AI-assisted development. Instead of "programming by feel," we're "engineering through natural language." The difference matters.
 
-This is the evolution that fits programming's trajectory. Just as Python didn't abandon C's performance considerations but abstracted them intelligently, Natural Language Programming doesn't abandon engineering principles but expresses them differently.
+This is the evolution that fits programming's trajectory. Just as Python didn't abandon C's performance considerations but abstracted them intelligently, Natural Language Coding doesn't abandon engineering principles but expresses them differently.
 
-## How to perfect the art of Natural Language Programming   
+## How to perfect the art of Natural Language Coding   
 
 The goal of Natural Langauge Programming is to bring engineering discipline to AI Assisted Programming. To minimize non-determinism and keep things as close as possbile to traditional programming priciples. To bring in accountablity of what we code.
 
@@ -111,7 +111,7 @@ Software Development Lifecycle (SDLC) isn't just for traditional programmers - i
 
 We're standing at a genuine inflection point. The democratization of programming is happening whether we guide it or not. The question isn't if everyone will be able to create software, but whether that software will be worth using.
 
-Natural Language Programming represents our best path forward. It acknowledges that the barriers to entry should be lower while insisting that the bar for quality remains high. Your domain expertise becomes your programming superpower, but it's channeled through proven engineering practices.
+Natural Language Coding represents our best path forward. It acknowledges that the barriers to entry should be lower while insisting that the bar for quality remains high. Your domain expertise becomes your programming superpower, but it's channeled through proven engineering practices.
 
 Think about what this enables. Medical professionals building tools that actually understand clinical workflows. Teachers creating educational software that reflects real classroom needs. Scientists developing research tools without waiting months for IT support. This isn't just about more programmers - it's about better software because it's built by people who deeply understand the problems.
 

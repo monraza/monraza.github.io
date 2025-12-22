@@ -1,6 +1,7 @@
 ---
 title: "Vibe Coding Handbook"
 date: 2025-05-19T10:00:00Z
+lastmod: 2025-12-22T10:00:00Z
 draft: false
 categories: ["AI & Programming"]
 tags: ["ai", "programming", "natural-language", "productivity", "audio", "video", "vibe-coding"]

@@ -2,8 +2,10 @@
 title: "Vibe Coding Handbook"
 date: 2025-05-19T10:00:00Z
 lastmod: 2025-12-22T10:00:00Z
+summary: "A comprehensive guide to building functional applications using AI-powered development tools (like Bolt.new) while following software engineering best practices, covering all phases from planning and PRD creation through design, development, testing, deployment, and maintenance. Unlike typical AI coding guides focused on speed, this handbook integrates formal SDLC principles to ensure structured, secure, and maintainable applications suitable for rapid prototyping by non-developers."
 draft: false
 categories: ["AI & Programming"]
+
 tags: ["ai", "programming", "natural-language", "productivity", "audio", "video", "vibe-coding"]
 ---
 

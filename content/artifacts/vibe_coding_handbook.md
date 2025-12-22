@@ -21,8 +21,8 @@ Vibe coding is a development approach where you describe what you want to build 
 As I have mentioned in this article [Anyone Can Be a Programmer](/posts/anyone-can-be-a-programmer/), why it is important to approach vibe coding with an engineering mindset and a defined framework. This handbook implements that approach, ensuring your AI-generated applications are structured, secure, scalable and professional.
 
 
-## From Unstrcturted sloppy code to Engineered robust Software
-### Follow Software development Framework
+## How to Transform Vibe Coding into Engineering
+### Follow Software Development Framework
 Follow each phase systematically to avoid the pitfalls of unstructured vibe coding.
 - **Planning** - Requirements documentation and PRD creation 
 - **Design** - System design, User interface and experience wireframing 
@@ -35,7 +35,7 @@ Each phase includes security, accessibility, and performance considerations from
 
 _NOTE: Complete prompts are provided at every step for direct implementation_
 
-### Engineering Mindset: 
+### Engineering Mindset:
 Maintain clear separation between what AI does and what you control.
 - **Engineering** (handled by you): Defining requirements, making design decisions, Questioning AI generated code, ensuring quality
 - **Implementation** (handled by AI): Writing syntax, formatting code, handling technical details
@@ -63,8 +63,6 @@ Before beginning vibe coding, ensure access to:
 _NOTE: All development occurs within web-based environments, requiring no local software installation._
 
 
-
-
 ## Choosing Your Tools
 This guide uses specific, tested tools that work best together for rapid prototyping:
 
@@ -72,7 +70,7 @@ This guide uses specific, tested tools that work best together for rapid prototy
 - **AI Coding Tool**: While this guide works with any AI coding assistant, for a quick start we are using [Bolt.new](https://bolt.new/). It is particularly good if you want to see results immediately without any setup. integrates with GitHub for version control, and supports deployment to Netlify.
 
 - **Web Browser**: Chrome or Edge (for developer tools)
-- **Google Lighthouse**: Built into Chrome (no installation needed) for performance and accessiblity testing
+- **Google Lighthouse**: Built into Chrome (no installation needed) for performance and accessibility testing
 
 ## Setting Up Your Workspace
 
@@ -114,7 +112,7 @@ Bolt.new provides everything in one interface:
 
 ### 1.2 Generate Your PRD Using AI
 
-Open your AI Coding assistant and use this comprehensive prompt (Update the sections in angualr bracket):
+Open your AI Coding assistant and use this comprehensive prompt (Update the sections in angular bracket):
 
 ```markdown
 I need you to create a comprehensive Product Requirements Document (PRD) for my app idea. Here's my basic information:
@@ -175,7 +173,7 @@ INTEGRATIONS: [Suggest any needed integrations based on my features]
 Make every section complete and specific enough to guide development.
 ```
 
-#### 1.3 Review and Refine Your Generated PRD
+### 1.3 Review and Refine Your Generated PRD
 1. Read through the generated PRD
 2. Check if it captures your vision accurately
 3. If something doesn't match your intent, use this refinement prompt:
@@ -466,7 +464,7 @@ Build this feature completely before we add the next one.
 2. **Test Core Functionality**
    
    Test Checklist for Feature 1:
-   - [ ] Meets all ACs as mentioend in the PRD
+   - [ ] Meets all ACs as mentioned in the PRD
    - [ ] Data saves correctly
    - [ ] Validation works for invalid input
    - [ ] Error messages display properly
@@ -776,7 +774,7 @@ Reference my PRD features to ensure no functionality is broken.
 
 1. **Prepare Files: Export from Bolt.new** :
    - To export code from Bolt.new, click your project's title in the top-left corner, then select Export > Download to get a .zip file of your code
-   - Exract the zip on desktop
+   - Extract the zip on desktop
    
 2. **Deploy with Drag-and-Drop**
    - Go to [app.netlify.com/drop](https://app.netlify.com/drop)
@@ -832,7 +830,7 @@ TECHNICAL REQUIREMENTS FROM PRD:
    - **Lighthouse**: Use Chrome lighthouse to test the live URL for performance issues. It should match Phase 4 results locally.
    - **Mobile test**: Open live URL on your phone
    - **Cross browser testing**: Test in Chrome, Safari, Firefox
-   - **Accessiblity Testing**:  Use Chrome lighthouse to test the live URL for acessbility issues. It should match Phase 4 results locally.
+   - **Accessibility Testing**:  Use Chrome lighthouse to test the live URL for acessbility issues. It should match Phase 4 results locally.
 
 #### **Share for Feedback (Optional)**
    - Send URL to 2-3 friends
@@ -1082,7 +1080,7 @@ After fixes, test with at least one user to confirm improvements:
    - Don't break existing data
    ```
 
-- **Iterate from Phase 2**
+- **Reiterate from Phase 2**
 
 ### 7.3 Handling User-Reported Issues
 

@@ -8,82 +8,124 @@ tags: ["ai", "programming", "natural-language", "productivity", "audio", "video"
 
 A practical guide to rapidly prototype ideas using AI-powered development tools, following software engineering best practices.
 
-## Introduction to Vibe Coding
 
-Vibe coding is a revolutionary approach to software development where you describe your application requirements in natural language, and AI tools generate the code for you. Coined by Andrej Karpathy in February 2025, vibe coding represents a paradigm shift where developers describe software requirements in natural language and trust AI to handle implementation details.
+## Overview
 
-This approach enables Product Owners and non-technical users to rapidly prototype and build functional applications without traditional coding knowledge. 25% of Y Combinator's Winter 2025 startups building 95% of their codebase with AI assistance, demonstrating the real-world viability of this approach.
+This handbook provides a comprehensive guide to rapidly prototype and build functional applications using AI-powered development tools following software engineering best practices. 
+>Unlike typical AI assisted coding guides that focus solely on rapid development, this handbook integrates formal Software Development Life Cycle (SDLC) principles and engineering mindset to ensure structured, secure, and maintainable applications.
 
-### Key Benefits
+### What Is Vibe Coding?
 
-- **Rapid Prototyping**: Build working applications in hours instead of weeks
-- **No Coding Required**: Describe functionality in plain English
-- **Cost Effective**: Reduce development costs for MVPs and prototypes
-- **Quick Iteration**: Make changes through simple text instructions
+Vibe coding is a development approach where you describe what you want to build in plain English, and AI tools write the actual code for you. Instead of learning programming languages, you have conversations with AI about your requirements, and it generates the technical implementation.
 
-### When to Use Vibe Coding
+As I have mentioned in this article [Anyone Can Be a Programmer](/posts/anyone-can-be-a-programmer/), why it is important to approach vibe coding with an engineering mindset and a defined framework. This handbook implements that approach, ensuring your AI-generated applications are structured, secure, scalable and professional.
 
-Vibe coding is ideal for:
-- Building MVPs and prototypes
-- Creating proof-of-concept applications
-- Testing business ideas quickly
-- Developing internal tools and dashboards
 
-## Essential Tools
-
-This guide uses specific, tested tools that work best together for rapid prototyping:
-
-### Primary Development Platform
-- **Bolt.new**: Your main development tool. Creates working prototypes in 15 seconds, handles full-stack applications, integrates with GitHub for version control, and supports deployment to Netlify.
-
-### Quality Assurance Tools
-- **Google Lighthouse**: Built into Chrome browser for performance testing
-- **OWASP ZAP**: Free security testing (download from zaproxy.org)
-- **WAVE Web Accessibility Checker**: Browser extension for accessibility testing
-- **Netlify**: Deployment platform (free tier, integrates directly with Bolt.new)
-
-## The Vibe Coding Workflow
-
-This workflow integrates all essential software development lifecycle (SDLC) phases while maintaining simplicity for non-technical users.
-
-```
-Planning → Design → Development → Testing → Deployment → User Acceptance → Maintenance
-```
+## From Unstrcturted sloppy code to Engineered robust Software
+### Follow Software development Framework
+Follow each phase systematically to avoid the pitfalls of unstructured vibe coding.
+- **Planning** - Requirements documentation and PRD creation 
+- **Design** - System design, User interface and experience wireframing 
+- **Development** - AI-assisted application building
+- **Testing** - Quality assurance and security validation
+- **Deployment** - Production release and configuration
+- **Maintenance** - Ongoing updates and optimization
 
 Each phase includes security, accessibility, and performance considerations from the start.
 
-## Step-by-Step Implementation Guide
+_NOTE: Complete prompts are provided at every step for direct implementation_
 
-### Phase 1: Planning and Requirements
+### Engineering Mindset: 
+Maintain clear separation between what AI does and what you control.
+- **Engineering** (handled by you): Defining requirements, making design decisions, Questioning AI generated code, ensuring quality
+- **Implementation** (handled by AI): Writing syntax, formatting code, handling technical details
 
-**Objective**: Create a Product Requirements Document (PRD) that will guide all subsequent phases.
 
-**What You'll Create**: A detailed PRD document generated from your high-level app idea.
+### Workflow Principles
 
-**Step-by-Step Process**:
+- **One Feature at a Time**: Complete and test each feature before adding the next
+- **Test Frequently**: Validate after each major change
+- **Document Everything**: Save successful prompts and important decisions
+- **Security First**: Always consider data protection and user safety
+- **User-Centered**: Regularly validate against user needs
 
-#### 1.1 Gather Your Basic App Idea
-Think about these simple questions (don't overthink - just basic answers):
-- What problem does your app solve?
-- Who will use it?
-- What are the 3-5 main things users should be able to do?
-- Is it a web app, mobile app, or both?
 
-#### 1.2 Generate Your PRD Using AI
-1. Open ChatGPT, Claude, or Bolt.new
-2. Use this prompt with your basic information:
+****
 
-**PRD Generation Prompt (Copy and Customize)**:
-```
+# Getting Started
+
+## Prerequisites
+
+Before beginning vibe coding, ensure access to:
+- Computer with stable internet connection
+- Google account for tool authentication
+
+_NOTE: All development occurs within web-based environments, requiring no local software installation._
+
+
+
+
+## Choosing Your Tools
+This guide uses specific, tested tools that work best together for rapid prototyping:
+
+
+- **AI Coding Tool**: While this guide works with any AI coding assistant, for a quick start we are using [Bolt.new](https://bolt.new/). It is particularly good if you want to see results immediately without any setup. integrates with GitHub for version control, and supports deployment to Netlify.
+
+- **Web Browser**: Chrome or Edge (for developer tools)
+- **Google Lighthouse**: Built into Chrome (no installation needed) for performance and accessiblity testing
+
+## Setting Up Your Workspace
+
+Setting Up Bolt.new
+
+- Open your web browser
+- Navigate to [Bolt.new](https://bolt.new/)
+- Click "Sign in" and create a free account using: Google account (recommended for quick setup). GitHub account (if you have one) or Email signup
+
+
+## Understanding Your Workspace
+Bolt.new provides everything in one interface:
+
+- Left panel: AI Chat, Where you'll paste the prompts from this guide
+- Center: Code Editor, AI writes code here automatically
+- Right panel: Live Preview, See your app update in real-time
+- Top right: Deploy Button, One-click to make your app live
+****
+   
+
+#
+# Implementation Guide
+
+## Phase 1: Planning and Requirements
+
+>**Objective**: Create a Product Requirements Document (PRD) that will guide all subsequent phases.
+
+**What You'll Create**: A detailed PRD document (txt, pdf or doc) generated from your high-level app idea.
+
+
+
+### 1.1 Gather Your Basic App Idea
+
+- **What problem does your app solve?** (Be specific - "helps small restaurant owners track daily revenue" not just "business tool")
+- **Who will use it?** (Define your target user clearly)
+- **What are the 3-5 main things users need to do?**
+- **What platform?** (Web app, mobile, or both)
+- **How many users?** (Estimate: 10-50, 50-100, 100-500, etc.)
+
+### 1.2 Generate Your PRD Using AI
+
+Open your AI Coding assistant and use this comprehensive prompt (Update the sections in angualr bracket):
+
+```markdown
 I need you to create a comprehensive Product Requirements Document (PRD) for my app idea. Here's my basic information:
 
 MY APP IDEA:
-- App Name: [Your app name or "TBD"]
-- Problem it solves: [Brief description - e.g., "Small business owners can't track tasks efficiently"]
-- Target users: [Who will use it - e.g., "Small business owners with 1-10 employees"]
-- Main features I want: [List 3-5 basic features - e.g., "Add tasks, see task list, mark tasks complete, set priorities"]
-- Platform: [Web app, mobile app, or both]
-- Rough user count: [How many people might use it - e.g., "50-100 users"]
+- App Name: <Your app name or "TBD">
+- Problem it solves: <Brief description>
+- Target users: <Who will use it>
+- Main features I want: <List 3-5 basic features>
+- Platform: <Web app, mobile app, or both>
+- Rough user count: <Estimated number>
 
 Create a detailed PRD with this exact structure:
 
@@ -92,18 +134,18 @@ PRODUCT REQUIREMENTS DOCUMENT
 ========================================
 
 PROJECT NAME: [Generate from my app idea]
-PURPOSE: [Expand my problem description into clear business purpose]
-TARGET USERS: [Expand my target users with specific characteristics and needs]
+PURPOSE: [Expand into clear business purpose]
+TARGET USERS: [Expand with specific characteristics]
 
 ========================================
 CORE FEATURES (Must-Have)
 ========================================
 
-[For each of my main features, create detailed sections with:]
+[For each main feature, create:]
 FEATURE [X]: [Feature name]
-DESCRIPTION: [Detailed explanation of functionality]
-USER VALUE: [Why users need this feature]
-ACCEPTANCE CRITERIA: [4-6 specific, testable requirements that define when this feature is complete]
+DESCRIPTION: [Detailed functionality explanation]
+USER VALUE: [Why users need this]
+ACCEPTANCE CRITERIA: [4-6 specific, testable requirements]
 
 ========================================
 USER FLOWS
@@ -130,7 +172,7 @@ DATA TO STORE: [List specific data types with character limits]
 STORAGE METHOD: [Recommend appropriate storage for my app complexity]
 INTEGRATIONS: [Suggest any needed integrations based on my features]
 
-Make sure every section is complete and specific enough to guide development phases.
+Make every section complete and specific enough to guide development.
 ```
 
 #### 1.3 Review and Refine Your Generated PRD
@@ -152,107 +194,106 @@ Changes needed:
 Please update only these sections while keeping the rest of the PRD intact.
 ```
 
-#### 1.4 Save Your Final PRD
-1. Copy the final PRD into a text document
-2. Save it as "PRD-[YourAppName].txt" or Google Doc
-3. This document will be referenced in every subsequent phase
+### 1.4 Save Your Final PRD
+- Copy the final PRD into a text document
+- Save it as "PRD-[YourAppName].txt" or Google Doc
+- This document will be referenced in every subsequent phase
 
-**Example of High-Level Input → Generated PRD**:
+> ⚠️ **Important**: Your PRD is your north star. Every decision should align with it.
 
-**Your Input**:
-```
-- App Name: TaskFlow Pro
-- Problem: Small business owners forget tasks and miss deadlines
-- Target users: Small business owners with 1-10 employees  
-- Main features: Add tasks, task dashboard, mark complete, set priorities, simple reports
-- Platform: Web app
-- User count: 50-100 users
-```
+**✅ Phase 1 Checklist:**
+- [ ] Basic app idea defined
+- [ ] PRD generated with all sections
+- [ ] PRD reviewed and refined
+- [ ] PRD saved in multiple locations
+- [ ] Ready to proceed to design
 
-**Generated PRD** (AI would create the complete detailed version):
-```
-========================================
-PRODUCT REQUIREMENTS DOCUMENT
-========================================
+---
 
-PROJECT NAME: TaskFlow Pro
-PURPOSE: Help small business owners efficiently track and manage daily tasks to prevent missed deadlines and improve productivity
-TARGET USERS: Small business owners with 1-10 employees who currently rely on scattered notes, mental tracking, or basic tools that don't provide adequate task organization and priority management
+## Phase 2: Design and User Experience
 
-========================================
-CORE FEATURES (Must-Have)
-========================================
+>**Objective**: Create visual wireframes and user interface design based on your PRD.
 
-FEATURE 1: Task Creation and Management
-DESCRIPTION: Users can create, edit, and delete tasks with comprehensive details including due dates, priority levels, and descriptions
-USER VALUE: Replaces unreliable mental tracking and scattered notes with a centralized, organized task management system
-ACCEPTANCE CRITERIA:
-- Users can create new tasks with title (max 100 characters), description (max 500 characters), due date, and priority level
-- Users can edit all task details after creation
-- Users can delete tasks with confirmation prompt
-- System validates required fields and shows appropriate error messages
-- Task creation form is accessible via prominent "Add Task" button
-- All task operations work smoothly on both desktop and mobile
-
-[AI would continue with detailed sections for all features, user flows, technical requirements, etc.]
-```
-
-**✅ DELIVERABLE**: Complete, detailed PRD document ready for Phase 2, generated from your simple app idea in 10-15 minutes instead of hours.
-
-### Phase 2: Design and User Experience
-
-**Objective**: Create visual wireframes and user interface design using your completed PRD.
+**What You'll Create**: Detailed Visual Designs files (.html) generated from your PRD showing your complete application interface
 
 **What You'll Use**: 
 - Your completed PRD document from Phase 1 (have it open)
 - Bolt.new for creating the design
 
-**Step-by-Step Process**:
-1. Open Bolt.new in your browser (bolt.new)
-2. Start a new project
-3. Copy your entire PRD and use this prompt:
+### 2.1 Generate Wireframes
 
-**Design Prompt (Copy and Customize)**:
-```
+Use this comprehensive design prompt with your AI Coding assistant:
+
+```markdown
 I need to create wireframes and visual design for this application. Here is my complete PRD:
 
-[PASTE YOUR ENTIRE COMPLETED PRD HERE - ALL SECTIONS]
+<PASTE YOUR ENTIRE PRD HERE>
 
-Based on this PRD, create wireframes with:
+Based on this PRD, create comprehensive wireframes with:
 
 HOMEPAGE/DASHBOARD DESIGN:
-- Header with app name "[Your Project Name from PRD]"
-- "Add Task" button prominently displayed
-- Task display area organized by: [reference your user flows from PRD]
-- Show task priority using: [colors mentioned in your PRD acceptance criteria]
-- Mobile-responsive layout that works on phones
+- Header with app name from PRD
+- Navigation for all major features
+- Primary feature prominently displayed
+- Visual hierarchy based on user priorities
+- Mobile-responsive layout
 
-TASK CREATION FORM:
-- Fields for: [list exactly what's in your PRD data requirements]
-- Form validation and error messaging
-- Save and Cancel buttons
-- Modal or sidebar layout for mobile
+[FEATURE NAME] INTERFACE:
+[Repeat for each core feature from PRD]
+- Input fields as specified in data requirements
+- User interactions defined in acceptance criteria
+- Clear call-to-action buttons
+- Error states and validation messages
 
 VISUAL STYLE:
-- Professional and clean design suitable for [your target users from PRD]
-- Color scheme: Primary blue (#2563eb), secondary gray (#6b7280), accent green (#10b981)
+- Professional appearance for [target users]
+- Color scheme: Primary, secondary, accent colors
 - Typography: Clear, readable fonts
 - High contrast for accessibility
+- Consistent spacing and alignment
 
 RESPONSIVE REQUIREMENTS:
-- Mobile-first design (works on phones first)
-- Touch-friendly buttons (minimum 44px)
-- Readable text on small screens
+- Mobile-first design (320px minimum)
+- Tablet breakpoint (768px)
+- Desktop optimization (1024px+)
+- Touch-friendly targets (44px minimum)
 
-Create the complete HTML structure with CSS styling that I can preview immediately.
+Create complete HTML structure with inline CSS styling that I can preview immediately.
 ```
 
-**What You'll Get**: Working HTML/CSS wireframes showing your complete application interface
+### 2.2 Preview and Test Your Wireframes
 
-#### 2.1 Refining Your Wireframes
+**Use Bolt.new Built-in Preview (in the right panel)**
+OR 
+
+Save as local html file to see the preview
+- Copy all code from AI
+- Create new file: `wireframe.html`
+- Paste code and save
+- Double-click file to open in browser
+
+
+### 2.3 Refine Your Design
+
+Test your wireframes for:
+
+**Visual Completeness:**
+- All PRD features are represented
+- Navigation is clear and intuitive
+- Important actions are prominent
+- Error states are designed
+
+**Responsive Design:**
+- Looks good on mobile (320px)
+- Works on tablet (768px)
+- Optimized for desktop (1024px+)
+
+### Refinement Prompts:
+
 If the first design doesn't match your vision, refine it using these steps:
 
 **Step 1: Identify Specific Changes**
+
 Look at the generated wireframes and note exactly what needs to change:
 - Layout issues (positioning, spacing, size)
 - Visual problems (colors, fonts, styling)
@@ -260,7 +301,7 @@ Look at the generated wireframes and note exactly what needs to change:
 - Mobile responsiveness issues
 
 **Step 2: Use Targeted Refinement Prompts**
-Continue in the same Bolt.new project (don't start new) and use specific prompts:
+Continue in the same Bolt.new project and use specific prompts:
 
 **For Layout Changes**:
 ```
@@ -297,7 +338,7 @@ MISSING ELEMENTS:
 Please add these elements while keeping all existing design intact.
 ```
 
-**Step 3: Test Responsiveness**
+**Test Responsiveness**
 After each refinement, test the wireframes on different screen sizes:
 1. In Bolt.new, click the mobile/tablet view buttons
 2. Check if all elements are readable and clickable
@@ -311,41 +352,41 @@ The mobile version has these issues:
 Please fix these mobile responsiveness issues while keeping desktop version intact.
 ```
 
-**Step 4: Final Design Validation**
-Before moving to Phase 3, ensure your wireframes include:
-- [ ] All features from your PRD are visually represented
-- [ ] Mobile and desktop versions work properly
+
+> 💡 **Tip**: Take screenshots of designs you like for reference in future projects.
+
+**✅ Phase 2 Checklist:**
+- [ ] All PRD features visible in wireframes
 - [ ] Colors and typography match your vision
-- [ ] All user flows from PRD can be followed in the design
+- [ ] Mobile and desktop versions tested
+- [ ] Navigation flow matches user journeys
+- [ ] Design saved as HTML file
+- [ ] Ready for development
 
-**✅ DELIVERABLE**: Save the Bolt.new project URL (bookmark it). You'll load this project in Phase 3 for development.
+---
 
-### Phase 3: Development
+## Phase 3: Development
 
-**Objective**: Transform your wireframes into a fully functional application using your PRD specifications.
+>**Objective**: Transform your wireframes into a fully functional application using your PRD specifications.
 
 **What You'll Use**: 
 - Your PRD document from Phase 1 (keep it open)
 - Your Bolt.new wireframe project from Phase 2
 
-**Step-by-Step Process**:
 
-#### 3.1 Continue in Same Bolt.new Project (Recommended)
-1. **Open your existing Bolt.new project** from Phase 2 (use the bookmark/URL you saved)
-2. **Keep your PRD document open** in another tab for reference
-3. **Continue in the same chat** - don't start a new project
+<details>
+**<summary>📘 Tool Guide: Managing Long Development Sessions</summary>**
 
-**Why continue in same project?**
-- Your wireframes are already loaded and context is maintained
-- Faster development since AI remembers your design decisions
-- No need to re-explain your requirements
+**Continue in Same Bolt.new Project (Recommended)**
+- Context is automatically maintained
+- Can reference "the wireframes we created"
+- Project URL remains the same throughout
+- Changes are saved automatically
 
-#### 3.2 Alternative: Create New Development Project
-**Only if your Phase 2 project has issues or you want a fresh start:**
-
-1. **Export your wireframes**: In Phase 2 project, copy all the HTML/CSS code
-2. **Start new Bolt.new project**
-3. **Paste wireframes first**, then add this context prompt:
+**Alternative: Create New Development Project**
+- **Export your wireframes**: In Phase 2 project, copy all the HTML/CSS code and save as .html files
+- **Start new Bolt.new project**
+- **Paste wireframes first**, then add this context prompt:
 
 ```
 I have wireframes from a previous project that I need to make functional. Here are my wireframes:
@@ -354,173 +395,309 @@ I have wireframes from a previous project that I need to make functional. Here a
 
 This design was created based on my PRD:
 [PASTE YOUR COMPLETE PRD FROM PHASE 1]
+```
+</details>
 
-Now I need to add full functionality to these wireframes.
+### 3.1 Development Strategy
+
+**Important**: Build one feature at a time, test it, then move to the next.
+
+```
+Feature 1 → Test → Fix → Feature 2 → Test → Fix → Feature 3...
 ```
 
-#### 3.3 Add Functionality to Your Wireframes
-**Use this development prompt in your chosen project:**
+### 3.2 Implement Your First Feature
 
-```
-Transform these wireframes into a fully functional application using my PRD specifications.
+Use this structured development prompt:
 
-MY PRD CORE FEATURES (Reference):
-[Copy your entire "CORE FEATURES" section from your PRD here]
+```markdown
+Transform these wireframes into a functional application. Here's my context:
 
-MY PRD DATA REQUIREMENTS:
-[Copy your entire "DATA REQUIREMENTS" section from your PRD here]
+MY WIREFRAMES:
+<Paste your HTML/CSS wireframes - or reference existing from Bolt.new>
+
+MY PRD CORE FEATURES:
+<Copy your entire "CORE FEATURES" section from your PRD here>
+
+MY DATA REQUIREMENTS:
+<Paste from your PRD>
 
 IMPLEMENTATION INSTRUCTIONS:
-Build the functionality for FEATURE 1 first: [Your first core feature name from PRD]
+Start with FEATURE 1: <Name from PRD>
 
-SPECIFIC FUNCTIONALITY TO IMPLEMENT:
-- [Copy the acceptance criteria for Feature 1 from your PRD]
-- Use the existing wireframe design as the visual foundation
-- Implement modern web components using shadcn/ui design system for consistent styling
-- Add form validation based on data requirements in my PRD
-- Include error handling and user feedback messages
-- Use browser local storage to save data (as specified in my PRD)
-- Ensure all interactions work smoothly on mobile devices
+FUNCTIONALITY TO BUILD:
+- <Copy all acceptance criteria for Feature 1>
+- Use local storage for data persistence
+- Include input validation
+- Add error handling with user-friendly messages
+- Ensure mobile responsiveness
+- Include loading states where appropriate
 
-TECHNICAL REQUIREMENTS FROM MY PRD:
-- [Copy your technical requirements section]
-- Add loading states for better user experience
-- Implement proper form validation and error handling
-- Ensure accessibility compliance (keyboard navigation, ARIA labels)
+TECHNICAL REQUIREMENTS:
+- <Copy your technical requirements section from PRD>
+- Modern JavaScript (ES6+)
+- Semantic HTML for accessibility
+- Form validation before submission
+- Keyboard navigation support
+- ARIA labels for screen readers
 
 DESIGN SYSTEM:
 - Use shadcn/ui components for buttons, forms, modals, and inputs
 - Maintain consistent styling with existing wireframe colors
 - Ensure components are responsive and accessible
 
-Please implement this feature completely and make it fully functional before moving to the next one.
+Build this feature completely before we add the next one.
 ```
 
-#### 3.4 Test Feature 1 Before Adding Next Feature
-**How to test Feature 1 in Bolt.new:**
+### 3.4 Test Feature
 
-1. **Preview your application**: Click the preview/run button in Bolt.new
+**Functional Testing Steps:**
+
+1. **Preview the Application**: Click the preview/run button in Bolt.new
+
 2. **Test core functionality**: 
    - Try the main user action for Feature 1 (e.g., if it's "Add Task", try adding a task)
    - Test with different inputs (valid data, invalid data, empty fields)
    - Check if data saves and displays correctly
    - Test on mobile view using Bolt.new's mobile preview
+   - Console errors appear in the preview panel
+   - Can interact directly with the application
 
-3. **Verify against PRD acceptance criteria**:
-   ```
-   Feature 1 Testing Checklist:
-   [Copy your Feature 1 acceptance criteria from PRD]
+2. **Test Core Functionality**
    
-   Test Results:
-   ✓ [Criterion 1]: [Works/Doesn't Work/Partially Works]
-   ✓ [Criterion 2]: [Works/Doesn't Work/Partially Works]
-   ✓ [Criterion 3]: [Works/Doesn't Work/Partially Works]
-   ```
+   Test Checklist for Feature 1:
+   - [ ] Meets all ACs as mentioend in the PRD
+   - [ ] Data saves correctly
+   - [ ] Validation works for invalid input
+   - [ ] Error messages display properly
+   - [ ] Works on mobile screen size
+   
+
+3. **Test Edge Cases**
+   - Empty inputs
+   - Very long text
+   - Special characters
+   - Rapid clicking/submission
+   - Browser refresh (data persistence)
+
 
 4. **Fix any issues found**:
-   ```
-   Feature 1 has these issues:
-   - [Specific problem observed]
-   - [What should happen according to PRD vs what actually happens]
-   
-   Please fix these issues while maintaining all existing functionality.
-   ```
+```markdown
+The feature has this issue:
+- Expected behavior: [what should happen]
+- Actual behavior: [what happens]
+- Error message (if any): [paste error]
+- Browser console shows: [paste console output]
 
-#### 3.5 Add Subsequent Features
-**After Feature 1 is fully working and tested**, add the next feature:
-
-```
-Feature 1 is working perfectly and meets all PRD acceptance criteria. Now implement FEATURE 2 from my PRD: [Feature 2 name]
-
-FEATURE 2 REQUIREMENTS FROM MY PRD:
-[Copy Feature 2 acceptance criteria from your PRD]
-
-INTEGRATION REQUIREMENTS:
-- Must work seamlessly with existing Feature 1 functionality
-- Use the same data storage method specified in my PRD
-- Maintain the design system consistency (shadcn/ui components)
-- Follow same performance and security standards
-- Ensure mobile responsiveness
-
-TECHNICAL SPECIFICATIONS:
-- Use shadcn/ui components for any new UI elements
-- Implement proper form validation if applicable
-- Add loading states and error handling
-- Ensure accessibility compliance
-
-Implement this feature while keeping all existing functionality intact.
+Please fix this issue while maintaining all working functionality.
 ```
 
-**Repeat this process** for each remaining core feature in your PRD, testing each one thoroughly before adding the next.
+### 3.5 Add Subsequent Features
 
-**✅ DELIVERABLE**: Fully functional application with all PRD features implemented and tested. Keep the Bolt.new project URL saved for Phase 4.
+After Feature 1 works perfectly, add the next feature:
 
-### Phase 4: Testing and Quality Assurance
+```markdown
+Feature 1 is working perfectly. Now add FEATURE 2: [Name from PRD]
 
-**Objective**: Test your functional application from Phase 3 to ensure it meets your PRD requirements and quality standards.
+REQUIREMENTS FOR FEATURE 2:
+[Paste Feature 2 acceptance criteria from PRD]
+
+INTEGRATION NEEDS:
+- Must work with existing Feature 1
+- Use same data storage method
+- Maintain consistent design
+- Keep all current functionality
+
+Please implement this feature completely.
+```
+
+**Repeat for each feature in your PRD**
+
+> ⚠️ **Warning**: Don't skip testing between features. Bugs compound quickly.
+
+### 3.6 Final Integration Testing
+
+Once all features are implemented:
+
+All individual features are working. Please review the complete application and:
+
+- [ ] Ensure all features work together seamlessly
+- [ ] Add any missing integration between features
+- [ ] Verify all PRD user flows are possible
+- [ ] Check data consistency across features
+- [ ] Confirm mobile responsiveness throughout
+
+Make any necessary adjustments for a cohesive application.
+
+**✅ Phase 3 Checklist:**
+- [ ] Each PRD feature implemented
+- [ ] All features tested individually
+- [ ] Integration between features verified
+- [ ] Data persistence working
+- [ ] Mobile responsiveness confirmed
+- [ ] Complete application saved locally
+
+---
+
+## Phase 4: Testing and Quality Assurance
+
+>**Objective**: Ensure your application meets quality standards and PRD requirements.
 
 **What You'll Use**: 
 - Your functional application from Phase 3 (Bolt.new project URL)
 - Your PRD document from Phase 1 for validation criteria
 
-**Step-by-Step Testing Process**:
 
-#### 4.1 Functional Testing Against PRD Requirements
-1. Open your Bolt.new application from Phase 3
-2. Open your PRD document from Phase 1 in another tab
-3. Test each feature systematically using your PRD acceptance criteria:
+### 4.1 Functional Testing Against PRD
 
-**PRD Validation Checklist (Customize with your PRD features)**:
-```
-FEATURE 1: [Your first feature name from PRD]
-PRD ACCEPTANCE CRITERIA: [Copy from your PRD]
-✓ Test Result: [Does it work as specified? Yes/No/Partially]
-✓ Issues Found: [List any problems]
+Create a systematic test plan from your PRD:
 
-FEATURE 2: [Your second feature name from PRD]  
-PRD ACCEPTANCE CRITERIA: [Copy from your PRD]
-✓ Test Result: [Does it work as specified? Yes/No/Partially]
-✓ Issues Found: [List any problems]
+```markdown
+PRD VALIDATION CHECKLIST
 
-[Continue for each core feature in your PRD]
+FEATURE 1: [Name from PRD]
+Acceptance Criteria from PRD:
+□ [Criterion 1] - PASS/FAIL
+□ [Criterion 2] - PASS/FAIL
+□ [Criterion 3] - PASS/FAIL
+Issues Found: [List any problems]
 
-USER FLOW TESTING:
-✓ PRIMARY FLOW from PRD: [Copy your primary user journey from PRD and test each step]
-✓ SECONDARY FLOW from PRD: [Copy your secondary user journey from PRD and test each step]
-```
+FEATURE 2: [Name from PRD]
+Acceptance Criteria from PRD:
+□ [Criterion 1] - PASS/FAIL
+□ [Criterion 2] - PASS/FAIL
+Issues Found: [List any problems]
 
-#### 4.2 Performance Testing with Google Lighthouse
-**Complete Instructions**:
-1. **Open Chrome**: Use Google Chrome browser (Lighthouse is built-in)
-2. **Navigate to your app**: Go to your Bolt.new application URL
-3. **Open Developer Tools**: Right-click → "Inspect" or press F12
-4. **Find Lighthouse**: Click the "Lighthouse" tab (may be hidden under ">>" if window is narrow)
-5. **Configure test**: 
-   - Check "Performance" and "Accessibility" boxes
-   - Uncheck other boxes to focus on essentials
-   - Select "Desktop" first, then repeat with "Mobile"
-6. **Run test**: Click "Analyze page load" and wait 2-3 minutes
-7. **Review results**:
-   - **Performance Score**: Should be 80+ (displayed prominently at top)
-   - **Core Web Vitals**: Look for green scores in these metrics
-   - **Opportunities**: Shows specific improvements to make
+END TO END USER FLOW TESTING:
+PRIMARY FLOW: [From PRD]
+□ Step 1 possible - PASS/FAIL
+□ Step 2 possible - PASS/FAIL
+□ Complete flow works - PASS/FAIL
 
-**If performance is below 80**, fix with this prompt in Bolt.new:
-```
-My Lighthouse performance test shows a score of [X]. The main issues are:
-- [Copy specific recommendations from Lighthouse "Opportunities" section]
-
-My PRD performance requirement: [Copy performance requirement from your PRD]
-
-Please optimize the application to:
-- Achieve performance score above 80
-- Meet the load time requirement in my PRD
-- Maintain all functionality from my PRD features
-
-Keep all existing features working while improving performance.
+SECONDARY FLOW: [From PRD]
+□ Complete flow works - PASS/FAIL
 ```
 
-#### 4.3 Security Testing with OWASP ZAP
+### 4.2 Performance Testing
+
+**Using Google Lighthouse:**
+
+1. **Prepare for Testing**
+   - Save your application as an HTML file (or use Bolt.new's deployed URL)
+   - Open it in Chrome browser
+   - Ensure it's fully loaded
+
+2. **Run Lighthouse Audit**
+   - Press F12 for Developer Tools
+   - Find "Lighthouse" tab (may be under >>)
+   - Configure test:
+     - ✓ Performance
+     - ✓ Accessibility
+     - ✓ Best Practices
+     - Mode: Navigation
+     - Device: Mobile (test mobile first)
+   - Click "Analyze page load"
+
+3. **Interpret Results**
+
+   **Performance Scores:**
+   - 🟢 90-100: Excellent
+   - 🟡 50-89: Needs improvement
+   - 🔴 0-49: Poor
+
+   **Key Metrics to Check:**
+   - First Contentful Paint (target: <1.8s)
+   - Largest Contentful Paint (target: <2.5s)
+   - Total Blocking Time (target: <200ms)
+   - Cumulative Layout Shift (target: <0.1)
+
+4. **Fix Performance Issues**
+
+   If score is below 80, fix with this prompt in Bolt.new:
+
+   ```markdown
+   My Lighthouse audit shows:
+   - Performance score: [X]
+   - Main issues: [List from Lighthouse]
+   
+   Please optimize the code to:
+   - Achieve performance score above 80
+   - Implement these specific improvements: [List from Lighthouse]
+   - Maintain all current functionality
+   ```
+
+### 4.3 Accessibility Testing
+
+**Using WAVE Browser Extension:**
+
+1. **Install WAVE**
+   - Chrome Web Store → Search "WAVE"
+   - Add to browser
+   - Pin to toolbar for easy access
+
+2. **Run Accessibility Check**
+   - Open your application (local file or Bolt.new preview)
+   - Click WAVE icon in toolbar
+   - Click "Wave this page"
+
+3. **Understand Results**
+   - 🔴 **Red Icons (Errors)**: Must fix
+     - Missing alt text
+     - Empty links
+     - Missing form labels
+   - 🟡 **Yellow Icons (Alerts)**: Should review
+     - Low contrast
+     - Redundant links
+     - Suspicious alt text
+   - 🟢 **Green Icons (Features)**: Good accessibility
+
+4. **Fix Accessibility Issues**
+
+   ```markdown
+   WAVE accessibility test found these issues:
+   - [Number] errors: [List error types]
+   - [Number] alerts: [List alert types]
+   
+   My PRD accessibility requirement: 
+   [Copy accessibility requirement from your PRD]
+   
+   Please fix these accessibility problems:
+   - Add appropriate alt text for images
+   - Improve color contrast (minimum 4.5:1 ratio)
+   - Add proper form labels
+   - Ensure keyboard navigation works
+   - Add ARIA attributes where needed
+   
+   Maintain all functionality while fixing these issues.
+   ```
+
+### 4.4 Security Testing
+
+#### 4.4.1 Manual Security Checklist:
+
+- [ ] No hardcoded passwords or API keys in code
+- [ ] Form inputs are validated before processing
+- [ ] No sensitive data in local storage (passwords, SSN, etc.)
+- [ ] External links open in new tabs with `rel="noopener"`
+- [ ] User input is never directly inserted into HTML
+
+**Basic Security Improvements:**
+
+```markdown
+Please review the code for security issues and:
+
+1. Ensure all user inputs are sanitized
+2. Add input validation for all forms
+3. Prevent XSS attacks by escaping user content
+4. Add rate limiting for form submissions (if applicable)
+5. Ensure no sensitive data is exposed in code
+
+Update the code with these security improvements.
+```
+
+<details>
+<summary>4.4.2 Advanced Security Testing with OWASP ZAP (Optional)</summary>
+
 **Complete Instructions**:
 1. **Download ZAP**: Go to zaproxy.org → Download → Choose your OS version
 2. **Install and open**: Follow installer, then launch OWASP ZAP
@@ -548,83 +725,89 @@ Please fix these security issues:
 
 Reference my PRD features to ensure no functionality is broken.
 ```
+</details>
 
-#### 4.4 Accessibility Testing with WAVE
-**Complete Instructions**:
-1. **Install WAVE**: 
-   - Go to Chrome Web Store
-   - Search "WAVE Evaluation Tool"
-   - Click "Add to Chrome"
-2. **Open your app**: Navigate to your Bolt.new application
-3. **Run WAVE**: Click WAVE extension icon in browser toolbar
-4. **Start scan**: Click "WAVE this page" button
-5. **Review results**: Colored icons appear on your page:
-   - **Red icons** = Errors (must fix)
-   - **Yellow icons** = Alerts (review and likely fix)
-   - **Green icons** = Good accessibility features
-6. **Get details**: Click any icon to see explanation and fix guidance
+**✅ Phase 4 Checklist:**
+- [ ] All PRD requirements tested and passing
+- [ ] Lighthouse score above 80
+- [ ] Zero critical accessibility errors
+- [ ] Security review completed
+- [ ] All issues fixed and retested
 
-**If accessibility issues are found**, fix with this prompt in Bolt.new:
-```
-My WAVE accessibility test found these issues:
-- [List specific errors and alerts from WAVE icons]
+---
 
-My PRD accessibility requirement: [Copy accessibility requirement from your PRD]
+## Phase 5: Deployment
 
-Please fix these accessibility problems:
-- Add proper labels and alt text where missing
-- Improve color contrast ratios
-- Ensure keyboard navigation works properly
-- Add ARIA attributes where needed
+>**Objective**: Make your application publicly accessible.
 
-Maintain all PRD functionality while meeting accessibility standards.
-```
 
-**✅ DELIVERABLE**: Tested and optimized application that meets all PRD requirements and passes quality standards.
+### 5.1 Prepare for Deployment
 
-### Phase 5: Deployment to Netlify
+**Pre-Deployment Checklist:**
+- [ ] Application works locally
+- [ ] All features tested
+- [ ] No console errors in browser
+- [ ] Mobile responsive design confirmed
+- [ ] PRD requirements met
 
-**Objective**: Deploy your tested application from Phase 4 to make it publicly accessible.
+### 5.2 Deployment
 
-**What You'll Use**: 
-- Your tested application from Phase 4 (Bolt.new project)
-- Netlify (free hosting, direct Bolt.new integration)
+### Bolt.new Direct Deployment (Fastest)
 
-**Step-by-Step Deployment**:
+**Steps:**
+- **In your Bolt.new project**, click "**Publish**" button, on the top right corner of the screen
+- **Wait for Bolt to compelte the deployment**:
+- **Get your URL**:
+   - Format: `https://abc.bolt.host/`
+   - Live in 1-2 minutes
+- **Future updates**:
+   - Make changes in Bolt.new
+   - Click "Publish" again to update
+- **Custom Domain (Optional)**
+   - Add custom domain in settings
+   - Follow DNS instructions
 
-#### 5.1 Deploy from Bolt.new to Netlify
-**Complete Instructions**:
-1. **Open your Bolt.new project**: Load your project from Phase 4
-2. **Find deploy button**: Look for "Deploy" or "Share" button in Bolt.new interface
-3. **Choose Netlify**: Select "Deploy to Netlify" option
-4. **Create Netlify account**: 
-   - Click "Sign up" if you don't have account
-   - Use GitHub, Google, or email signup (GitHub recommended)
-   - Verify your email if required
-5. **Authorize connection**: Allow Bolt.new to connect to your Netlify account
-6. **Configure deployment**:
-   - Site name: Choose a name (can change later)
-   - Keep other settings as default
-7. **Deploy**: Click "Deploy site" and wait 2-3 minutes
-8. **Get your URL**: Copy the live URL (format: https://yourname.netlify.app)
+### Option 2: Netlify Instant Drop
 
-#### 5.2 Configure Your Live Site
-**Domain and Settings**:
-1. **Access Netlify dashboard**: Go to netlify.com and log in
-2. **Find your site**: Click on your deployed site name
-3. **Customize URL**: 
-   - Go to "Site configuration" → "Site details"
-   - Click "Change site name"
-   - Choose a memorable name related to your PRD project name
+**Pros**: Instant deployment, no Git required
 
-**Environment Configuration**:
-1. **Secure settings**: In Netlify dashboard → "Environment variables"
-2. **Add any secrets**: If your app uses API keys, add them here (not in code)
+<details>
+<summary>📖 **Complete Netlify Drop Setup**</summary>
 
-#### 5.3 Verify Deployment Against PRD
-**Test your live application**:
-1. **Open live URL**: Visit your https://yourname.netlify.app address
-2. **Test all PRD features**: Use your PRD acceptance criteria from Phase 1:
+1. **Prepare Files: Export from Bolt.new** :
+   - To export code from Bolt.new, click your project's title in the top-left corner, then select Export > Download to get a .zip file of your code
+   - Exract the zip on desktop
+   
+2. **Deploy with Drag-and-Drop**
+   - Go to [app.netlify.com/drop](https://app.netlify.com/drop)
+   - Drag your `dist` folder onto the browser window or Click `browse to upload` and select you `dist` folder.
+   - Wait for upload (few seconds)
+
+3. **Get Your URL**
+   - Random URL appears immediately
+   - Works for 1 hours without account
+   - Test all features
+
+4. **Update Site**
+   - Drag new folder version
+   - Or use Netlify dashboard
+
+5. **Make It Permanent (Optional)**
+   - Click "Sign up for free"
+   - Create free Netlify account
+   - Site becomes permanent
+
+6. **Custom Domain (Optional)**
+   - Add custom domain in settings
+   - Follow DNS instructions
+</details>
+
+### 5.3 Post-Deployment Testing
+
+**Critical**: Test your live site immediately:
+
+#### **Functional Testing**
+⚠️ **Warning**: Verify Deployment immediately Against PRD
 ```
 LIVE SITE TESTING CHECKLIST:
 Using my PRD from Phase 1, verify each feature works on the live site:
@@ -645,550 +828,392 @@ TECHNICAL REQUIREMENTS FROM PRD:
 ✓ All user flows work: [Test each flow from PRD]
 ```
 
-3. **Run final quality tests**:
-   - **Lighthouse**: Test the live URL (should match Phase 4 results)
+#### **Run Non Functional Testing**:
+   - **Lighthouse**: Use Chrome lighthouse to test the live URL for performance issues. It should match Phase 4 results locally.
    - **Mobile test**: Open live URL on your phone
-   - **Different browsers**: Test in Chrome, Safari, Firefox
+   - **Cross browser testing**: Test in Chrome, Safari, Firefox
+   - **Accessiblity Testing**:  Use Chrome lighthouse to test the live URL for acessbility issues. It should match Phase 4 results locally.
 
-**If deployment issues occur**, fix with this prompt in Bolt.new:
+#### **Share for Feedback (Optional)**
+   - Send URL to 2-3 friends
+   - Ask them to test basic features
+   - Note any issues they find
+
+**If issues appear only on live site:**
+
+```markdown
+My application works locally but has these issues when deployed:
+- Issue 1: [Description]
+- Issue 2: [Description]
+- Deployment platform: [Bolt.new/Netlify/etc.]
+
+Please help fix these deployment-specific issues.
 ```
-My application deployment to Netlify has these problems:
-- [Describe specific issues - features not working, errors, etc.]
 
-Original working version: [Reference your Phase 4 tested version]
-PRD requirements that must work: [Copy core features from your PRD]
+**✅ Phase 5 Checklist:**
+- [ ] Code prepared for deployment
+- [ ] Deployment platform chosen
+- [ ] Application successfully deployed
+- [ ] Live URL tested and working
+- [ ] URL saved and documented
 
-Please fix these deployment issues:
-- Ensure all code works in production environment
-- Fix any file path or configuration problems
-- Maintain all PRD functionality on the live site
-```
+---
 
-**✅ DELIVERABLE**: Live, publicly accessible application at your Netlify URL that fully implements your PRD.
+## Phase 6: User Acceptance Testing
 
-### Phase 6: User Acceptance Testing
-
-**Objective**: Validate your live application from Phase 5 with real users against your PRD objectives.
+>**Objective**: Validate that real users can successfully use your application.
 
 **What You'll Use**: 
 - Your live application URL from Phase 5
 - Your PRD from Phase 1 (specifically user and business objectives)
 
-**Step-by-Step User Testing**:
+### 6.1 Prepare for User Testing
 
-#### 6.1 Create Test Scenarios from Your PRD
-Using your PRD target users and core features, create specific test scenarios:
+**Create Your Test Plan:**
 
-**Test Scenario Template (Create for each PRD feature)**:
-```
-TEST SCENARIO 1: [Core Feature 1 from PRD]
-TARGET USER: [Copy target user description from your PRD]
-BUSINESS OBJECTIVE: [What success looks like per your PRD purpose]
-STARTING POINT: [Live application homepage]
-USER TASK: "[Describe in user's language what they should accomplish]"
+```markdown
+USER TEST PLAN
 
-STEPS FOR USER:
-1. [First action - based on your PRD user flow]
-2. [Second action]
-3. [Continue until feature complete]
+APPLICATION: [Name]
+URL: [Your live URL]
+TARGET USERS: [From PRD]
 
-SUCCESS CRITERIA FROM PRD:
-- [Copy acceptance criteria from your PRD for this feature]
-- User completes task without assistance
-- User understands the value (matches PRD purpose)
+TEST SCENARIOS:
+Scenario 1: [Main user flow from PRD]
+- Start: Homepage
+- Goal: [What user should accomplish]
+- Success: [What indicates success]
 
-[Create similar scenarios for each core feature in your PRD]
-```
+Scenario 2: [Secondary flow from PRD]
+- Start: [Starting point]
+- Goal: [What to accomplish]
+- Success: [Success indicator]
 
-#### 6.2 Recruit and Test Users
-**Find test users**: 3-5 people who match your PRD target user description
-**Testing process**:
-1. **Send live URL**: Give users your Netlify application link
-2. **Give one scenario at a time**: Don't overwhelm with all tasks
-3. **Observe and record**: Use this template for each user:
-
-**User Testing Results (Fill out for each user/scenario)**:
-```
-USER: [User 1, 2, 3, etc.]
-MATCHES PRD TARGET USER: [How closely they match your PRD target user description]
-TEST SCENARIO: [Which PRD feature scenario]
-
-COMPLETION RESULTS:
-✓ Task completed successfully: [Yes/No/Partially]
-✓ Time to complete: [Minutes]
-✓ Needed help: [Yes/No - what help?]
-✓ User satisfaction: [1-5 scale]
-
-USER FEEDBACK (Direct quotes):
-- "[What they said about the feature]"
-- "[Any confusion or frustration mentioned]"
-- "[Suggestions they made]"
-
-PRD VALIDATION:
-✓ Feature works as intended in PRD: [Yes/No]
-✓ User gets value described in PRD purpose: [Yes/No]
-✓ Meets PRD acceptance criteria: [Yes/No/Partially]
-
-ISSUES FOUND:
-- [Specific problems that prevent PRD goals]
-- [Usability issues that hurt user experience]
-
-PRIORITY: [High=blocks PRD goals, Medium=hurts experience, Low=nice to have]
+FEEDBACK QUESTIONS:
+1. Could you complete the task?
+2. What was confusing?
+3. What did you like?
+4. What would you change?
+5. Would you use this application?
 ```
 
-#### 6.3 Analyze Results Against PRD Success
-**Validation against PRD objectives**:
-```
-PRD SUCCESS ANALYSIS:
+### 6.2 Find Test Users
 
-PRIMARY PURPOSE FROM PRD: [Copy your PRD purpose statement]
-✓ Users achieved this purpose: [X out of Y users successful]
+**Recruiting Testers:**
+- Friends or family who match target user profile
+- Social media groups related to your app's purpose
+- Local community members
+- Colleagues (for business tools)
 
-CORE FEATURES VALIDATION:
-Feature 1: [Name] - [X/Y users completed successfully]
-Feature 2: [Name] - [X/Y users completed successfully]  
-Feature 3: [Name] - [X/Y users completed successfully]
+**Ideal Number**: 3-5 testers
 
-TARGET USER FIT:
-✓ Test users matched PRD target user description: [Assessment]
-✓ Users understood intended value: [Yes/No based on feedback]
+### 6.3 Conduct Testing
 
-CRITICAL ISSUES (High Priority):
-- [Issues that prevent PRD objectives from being met]
-- [Problems that block core feature usage]
-```
+**Testing Instructions for Users:**
 
-#### 6.4 Fix Critical Issues
-For any High Priority issues that prevent PRD objectives, fix immediately:
+```markdown
+Hi! I need your help testing my new application.
 
-```
-USER TESTING RESULTS for my live application at [your Netlify URL]:
+WHAT IT DOES: [Brief description from PRD]
 
-PRD OBJECTIVE NOT BEING MET: [Copy PRD purpose that users struggled with]
+YOUR TASK:
+1. Go to: [your URL]
+2. Try to: [Specific task from scenario]
+3. Don't worry about making mistakes
+4. Note anything confusing
 
-USER FEEDBACK INDICATING PROBLEMS:
-- User quotes: "[Specific feedback about confusion or failure]"
-- Completion rates: [X out of Y users succeeded with core features]
-- Specific failures: [Which PRD acceptance criteria users couldn't meet]
+AFTERWARDS:
+Please tell me:
+- Were you able to complete the task?
+- What was confusing or difficult?
+- What did you like?
+- Any suggestions?
 
-REQUIRED FIXES:
-- [Fix specific usability issues that block PRD goals]
-- [Improve features that users couldn't complete]
-- [Address confusion that prevents PRD purpose from being achieved]
-
-CONSTRAINTS:
-- Maintain all working functionality
-- Keep performance and accessibility standards from Phase 4
-- Ensure fixes align with original PRD requirements
-
-Please implement these user-validated improvements.
+Thank you for your help!
 ```
 
-**✅ DELIVERABLE**: User-validated application that successfully achieves your PRD objectives with real target users.
+### 6.4 Collect and Analyze Feedback
 
-**Phase 6 Completion Checklist**:
-```
-□ Test scenarios created for all PRD core features
-□ 3-5 target users completed testing
-□ User feedback documented with direct quotes
-□ PRD objectives validated with real users
-□ Critical usability issues identified and prioritized
-□ High priority fixes implemented and re-deployed
-□ Final validation that users can achieve PRD purpose
-```
+**Feedback Collection Template:**
 
-## Quality Assurance
+```markdown
+USER FEEDBACK SUMMARY
 
-### Security Best Practices with OWASP ZAP
+TESTER 1: [Name/Identifier]
+- Task Completed: Yes/No/Partially
+- Time Taken: [X minutes]
+- Confusion Points: [List]
+- Positive Feedback: [List]
+- Suggestions: [List]
+- Would Use Again: Yes/No
 
-**Essential Security Measures**:
-1. **Input Validation**: All user inputs must be validated and sanitized
-2. **Authentication**: Secure user login and session management
-3. **Data Protection**: Encrypt sensitive data and use HTTPS
-4. **Access Control**: Limit user permissions appropriately
+[Repeat for each tester]
 
-**How to Use OWASP ZAP**:
-1. **Download and Install**:
-   - Go to zaproxy.org
-   - Download the free version for your operating system
-   - Install and launch the application
+COMMON ISSUES:
+1. [Issue mentioned by multiple users]
+2. [Another common issue]
 
-2. **Basic Security Scan**:
-   - Open ZAP and select "Quick Start" tab
-   - Enter your application URL in "URL to attack" field
-   - Click "Automated Scan" button
-   - Wait 5-15 minutes for scan completion
-
-3. **Review Results**:
-   - Click "Alerts" tab to see security issues
-   - Focus on "High" and "Medium" risk items first
-   - Each alert shows the vulnerable URL and explanation
-
-4. **Common Issues to Fix**:
-   - Missing security headers
-   - Input validation problems
-   - Cross-site scripting vulnerabilities
-   - Insecure data transmission
-
-### Performance Standards with Google Lighthouse
-
-**Performance Targets**:
-- Page load time: Under 3 seconds
-- Time to Interactive: Under 5 seconds
-- Lighthouse Performance Score: Above 80
-- Mobile responsiveness: 100% functional
-
-**How to Use Google Lighthouse**:
-1. **Access Lighthouse**:
-   - Open Google Chrome browser
-   - Navigate to your application
-   - Right-click and select "Inspect"
-   - Click "Lighthouse" tab in Developer Tools
-
-2. **Run Performance Test**:
-   - Check "Performance" and "Accessibility" boxes
-   - Select "Desktop" or "Mobile" (test both)
-   - Click "Generate report" button
-   - Wait 2-5 minutes for completion
-
-3. **Interpret Results**:
-   - Performance score appears at top (aim for 80+)
-   - "Opportunities" section shows improvement suggestions
-   - "Diagnostics" section explains performance issues
-   - Each recommendation includes estimated time savings
-
-4. **Key Metrics to Monitor**:
-   - First Contentful Paint: Should be under 2 seconds
-   - Largest Contentful Paint: Should be under 3 seconds
-   - Total Blocking Time: Should be minimal
-   - Cumulative Layout Shift: Should be under 0.1
-
-### Accessibility Compliance with WAVE
-
-**Accessibility Standards**:
-- WCAG 2.1 AA compliance
-- Keyboard navigation support
-- Screen reader compatibility
-- Sufficient color contrast ratios
-
-**How to Use WAVE Accessibility Checker**:
-1. **Install WAVE Extension**:
-   - Go to Chrome Web Store
-   - Search for "WAVE Evaluation Tool"
-   - Click "Add to Chrome" to install extension
-
-2. **Run Accessibility Check**:
-   - Navigate to your application
-   - Click WAVE extension icon in browser toolbar
-   - Click "WAVE this page" button
-   - Results appear as colored icons on your page
-
-3. **Understand WAVE Results**:
-   - **Red icons**: Errors that must be fixed
-   - **Yellow icons**: Alerts to review and potentially fix
-   - **Green icons**: Accessibility features detected
-   - **Blue icons**: Structural elements identified
-
-4. **Common Issues and Fixes**:
-   - Missing alt text for images
-   - Insufficient color contrast
-   - Missing form labels
-   - Poor heading structure
-   - Links without descriptive text
-
-5. **WAVE Reporting**:
-   - Click "Details" tab for comprehensive report
-   - Use "Structure" tab to review page organization
-   - "Reference" tab provides guidance for each issue type
-
-### Integrated Testing Workflow
-
-**Testing Sequence for Best Results**:
-1. **Start with WAVE**: Fix accessibility issues first
-2. **Run Lighthouse**: Check performance and remaining accessibility
-3. **Finish with OWASP ZAP**: Ensure security measures don't break functionality
-4. **Retest**: Run all three tools after making fixes
-
-**Testing Frequency**:
-- **During Development**: WAVE after each design change
-- **Before Deployment**: Full suite (WAVE + Lighthouse + ZAP)
-- **Monthly Maintenance**: Complete testing cycle
-- **After Updates**: Targeted testing for affected areas
-
-## Maintenance and Updates
-
-### Regular Maintenance Schedule
-
-**What You'll Use**: 
-- Your live application from Phase 5
-- User feedback collected from Phase 6 and ongoing usage
-- Original PRD from Phase 1 for reference
-
-#### Weekly Tasks (15 minutes)
-1. **Monitor Application Health**:
-   - Visit your live application URL
-   - Test core features from your PRD
-   - Check for any broken functionality
-
-2. **Review User Feedback**:
-   - Check any user reports or support requests
-   - Document new issues using the feedback template from Phase 6
-
-#### Monthly Tasks (1 hour)
-1. **Performance Check**:
-   - Run Lighthouse audit on your live application
-   - Compare scores to your Phase 4 baseline
-   - If performance drops below 80, use this prompt:
-   ```
-   My Lighthouse performance score has dropped to [X] from previous score of [Y]. 
-   Please optimize the application to restore performance above 80 while maintaining all functionality.
-   ```
-
-2. **Security Scan**:
-   - Run OWASP ZAP scan on your live application
-   - Compare results to Phase 4 baseline
-   - If new vulnerabilities appear, use this prompt:
-   ```
-   My security scan shows new vulnerabilities: [list issues]
-   Please fix these security issues while maintaining all current features.
-   ```
-
-3. **Accessibility Check**:
-   - Run WAVE scan on your live application
-   - Fix any new accessibility issues that appear
-
-#### Quarterly Tasks (2-3 hours)
-1. **Full Application Review**:
-   - Re-test all user flows from your PRD
-   - Conduct mini user testing session (2-3 users)
-   - Review and prioritize accumulated feedback
-
-2. **Feature Updates Based on Feedback**:
-   - Compile all user feedback from the quarter
-   - Identify the most requested improvements
-   - Update your PRD with new requirements
-
-### Adding New Features
-
-**When to Add Features**:
-- Users consistently request the same functionality
-- New features align with your original PRD objectives
-- You have validated the need through user feedback
-
-**Feature Addition Process**:
-
-#### Step 1: Update Your PRD
-1. Open your original PRD document from Phase 1
-2. Add the new feature to your requirements:
-```
-NEW FEATURE: [Feature Name]
-USER REQUEST FREQUENCY: [How often users ask for this]
-BUSINESS VALUE: [Why this feature supports your PRD objectives]
-DETAILED REQUIREMENTS: [Specific functionality needed]
-INTEGRATION POINTS: [How it connects with existing features]
+PRIORITY FIXES:
+High: [Blocks core functionality]
+Medium: [Causes confusion]
+Low: [Nice to have]
 ```
 
-#### Step 2: Design Integration
-Plan how the new feature fits with your existing application:
-```
-DESIGN INTEGRATION PROMPT for Bolt.new:
+### 6.5 Implement Critical Fixes
 
-I want to add a new feature to my existing application: [Feature Name]
+Focus only on HIGH priority issues:
 
-CURRENT APPLICATION CONTEXT:
-- My PRD objectives: [paste relevant sections]
-- Existing features that work well: [list current features]
-- Current user flows: [describe main user journeys]
+<details>
+<summary>📘 **Tool Guide: Making Updates After Deployment**</summary>
 
-NEW FEATURE REQUIREMENTS:
-- Functionality needed: [detailed description from updated PRD]
-- User interface requirements: [how it should look and feel]
-- Integration requirements: [how it connects with existing features]
+**Bolt.new:**
+1. Open your existing project
+2. Make fixes in the same session
+3. Test in preview
+4. Click "Deploy" again to update live site
 
-CONSTRAINTS:
-- Must maintain current performance (Lighthouse score > 80)
-- Must maintain accessibility standards (WAVE compliant)
-- Must maintain security standards (no new vulnerabilities)
-- Must not break existing functionality
+**GitHub Pages:**
+1. Update your local HTML file
+2. Upload new version to GitHub
+3. Changes deploy automatically
 
-Please design the interface and user flow for this new feature.
-```
+**Netlify:**
+1. Update code locally
+2. Drag new folder to Netlify Drop
+3. Or update through dashboard
 
-#### Step 3: Develop and Test
-1. Implement the new feature using Bolt.new
-2. Test using the same process from Phase 4:
-   - Manual functionality testing
-   - Lighthouse performance test
-   - OWASP ZAP security scan
-   - WAVE accessibility test
+**General Approach:**
+1. Fix issues in your AI tool
+2. Test thoroughly
+3. Re-deploy using same method
+</details>
 
-#### Step 4: Deploy and Validate
-1. Deploy update through Bolt.new to Netlify
-2. Test the new feature on the live site
-3. Conduct user testing specifically for the new feature
-4. Collect feedback and iterate if necessary
-
-### Handling User-Reported Issues
-
-**Issue Classification Template**:
-```
-ISSUE REPORT: [Brief description]
-REPORTED BY: [User identifier]
-AFFECTS FEATURE: [Which PRD feature is impacted]
-REPRODUCTION STEPS: [How to recreate the problem]
-IMPACT LEVEL: 
-- High: Prevents core PRD functionality
-- Medium: Causes inconvenience but workarounds exist
-- Low: Minor usability issue
-
-PRIORITY: [High/Medium/Low based on impact]
-```
-
-**Issue Resolution Prompt**:
-```
-A user reported this issue with my application:
-
-PROBLEM DESCRIPTION: [User's description of the issue]
-FEATURE AFFECTED: [Which feature from my PRD is not working]
-STEPS TO REPRODUCE: [How to recreate the problem]
-EXPECTED BEHAVIOR: [What should happen according to my PRD]
-ACTUAL BEHAVIOR: [What is currently happening]
-
-Please fix this issue while:
-- Maintaining all other functionality
-- Keeping performance and security standards
-- Ensuring the fix aligns with my original PRD requirements
-```
-
-### Scaling Considerations
-
-**When to Consider Professional Development**:
-Monitor these indicators monthly:
-
-1. **User Growth**: More than 100 concurrent users
-2. **Performance Issues**: Consistent Lighthouse scores below 70
-3. **Security Concerns**: High-risk vulnerabilities that can't be easily fixed
-4. **Complex Requirements**: Features that require database management, complex authentication, or third-party integrations beyond simple APIs
-
-**Transition Planning**:
-If you need to move beyond vibe coding:
-
-1. **Documentation Package**:
-   - Your original PRD
-   - User feedback compilation
-   - Current application architecture (export from Bolt.new)
-   - Performance and security test results
-   - User analytics and usage patterns
-
-2. **Developer Handoff Prompt**:
-```
-I need to transition my vibe-coded application to professional development.
-
-CURRENT APPLICATION:
-- Live URL: [your Netlify URL]
-- Original PRD: [paste your PRD]
-- Current user base: [number of users]
-- Key features that work well: [list successful features]
-
-CHALLENGES REQUIRING PROFESSIONAL DEVELOPMENT:
-- [Specific technical limitations encountered]
-- [Performance or security issues beyond vibe coding scope]
-- [Complex features users are requesting]
-
-Please provide:
-1. Architecture documentation for the current application
-2. Code export and migration recommendations
-3. Technology stack recommendations for scaling
-4. Transition plan that minimizes user disruption
-```
-
-### Success Metrics Tracking
-
-**Monthly Metrics to Monitor**:
-- User engagement (how often users return)
-- Feature usage (which PRD features are most used)
-- Performance trends (Lighthouse scores over time)
-- User satisfaction (feedback sentiment)
-- Technical health (error rates, uptime)
-
-**Quarterly Review Template**:
-```
-QUARTER: [Q1/Q2/Q3/Q4] [YEAR]
-
-PRD OBJECTIVE ACHIEVEMENT:
-- Original goal: [from your PRD]
-- Current status: [Achieved/Partially Achieved/Not Achieved]
-- Evidence: [user feedback, usage data, etc.]
-
-TECHNICAL HEALTH:
-- Average Lighthouse score: [X]
-- Security vulnerabilities: [None/Low/Medium/High]
-- Accessibility compliance: [Compliant/Issues Identified]
-- Uptime: [percentage]
+```markdown
+Based on user testing of [Application Name], these critical issues need fixing:
 
 USER FEEDBACK SUMMARY:
-- Total feedback items: [number]
-- Most requested features: [list top 3]
-- Most reported issues: [list top 3]
-- Overall satisfaction trend: [Improving/Stable/Declining]
+- [X] out of [Y] users couldn't complete [task]
+- Multiple users confused by [specific element]
+- Users expected [behavior] but got [other behavior]
 
-NEXT QUARTER PRIORITIES:
-1. [Top priority based on data]
-2. [Second priority]
-3. [Third priority]
+REQUIRED FIXES:
+1. [Most critical issue]
+   - Current behavior: [what happens now]
+   - Expected behavior: [what users expect]
+   
+2. [Second critical issue]
+   - Current behavior: [description]
+   - Expected behavior: [description]
+
+Please fix these issues while maintaining all working functionality.
 ```
 
-This systematic approach ensures your vibe-coded application continues to serve your users effectively while maintaining the rapid iteration benefits that made vibe coding attractive in the first place.
+### 6.6 Final Validation
 
+After fixes, test with at least one user to confirm improvements:
+- Send updated URL
+- Ask to retry the problematic task
+- Confirm issue is resolved
+
+**✅ Phase 6 Checklist:**
+- [ ] Test scenarios created from PRD
+- [ ] 3-5 users completed testing
+- [ ] Feedback documented
+- [ ] Critical issues identified
+- [ ] High-priority fixes implemented
+- [ ] At least one user validated fixes
+- [ ] Application meets PRD objectives
+
+---
+
+
+## Phase 7: Maintenance and Updates
+
+### 7.1 Regular Maintenance Schedule
+
+#### **Weekly Tasks (15 minutes)**
+- Visit live application
+- Test core features
+- Check for user feedback
+- Note any issues
+
+#### **Monthly Tasks (1 hour)**
+- Run Lighthouse audit
+- Compare to baseline scores
+- Test all user flows
+- Review user feedback
+- Plan improvements
+
+#### **Quarterly Tasks (2-3 hours)**
+- Comprehensive testing
+- User feedback analysis
+- Feature prioritization
+- Performance optimization
+- Security updates
+
+### 7.2 Adding New Features
+
+#### **When to Add Features**
+- Multiple users request same functionality
+- Feature aligns with PRD objectives
+- Current application is stable
+- You have time for proper testing
+
+#### **Feature Addition Process**
+
+- Open your existing project URL in **Bolt.new:**
+- Continue in the same session
+- Update Your PRD
+   
+   ```markdown
+   Add this new feature to my application:
+   
+   CURRENT STATE:
+   - Working features: [List current features]
+   - Live URL: [Your deployment URL]
+   
+   NEW FEATURE:
+   [Paste feature requirements]
+   
+   CONSTRAINTS:
+   - Maintain all current functionality
+   - Keep same design style
+   - Ensure mobile responsiveness
+   - Don't break existing data
+   ```
+
+- **Iterate from Phase 2**
+
+### 7.3 Handling User-Reported Issues
+
+#### **Issue Triage Process**
+
+**Priority Levels:**
+- 🔴 **Critical**: Feature completely broken
+- 🟡 **Major**: Feature partially working
+- 🟢 **Minor**: Cosmetic or enhancement
+
+**Issue Resolution Template:**
+```markdown
+USER REPORTED ISSUE:
+
+Description: [What user reported]
+Feature Affected: [Which PRD feature]
+Steps to Reproduce: [How to see the issue]
+Expected Result: [What should happen]
+Actual Result: [What actually happens]
+Priority: [Critical/Major/Minor]
+
+Please fix this issue while maintaining all other functionality.
+```
+***
 ## Best Practices and Tips
 
 ### Effective Prompting Strategies
 
-**Do's**:
-- Be specific about requirements and constraints
-- Provide examples of desired behavior
-- Break complex requests into smaller steps
-- Include context about your users and use case
+#### **The Five Principles of Good Prompts**
 
-**Don'ts**:
-- Make vague requests like "make it better"
-- Assume the AI understands implicit requirements
-- Request multiple major features in one prompt
-- Skip testing between iterations
+1. **Be Specific**
+   - ❌ "Make it better"
+   - ✅ "Improve load time by optimizing images and minimizing JavaScript"
 
-### Common Pitfalls to Avoid
+2. **Provide Context**
+   - ❌ "Add a form"
+   - ✅ "Add a contact form with name, email, and message fields that saves to local storage"
 
-**Technical Debt Management**:
-- Document all AI-generated code decisions
-- Test each feature thoroughly before building the next
-- Keep prompts and requirements organized
-- Plan for future maintenance needs
+3. **Set Constraints**
+   - ❌ "Fix the bug"
+   - ✅ "Fix the bug while maintaining all current features and mobile responsiveness"
 
-**Security Considerations**:
-- Never hardcode sensitive information like passwords or API keys
-- Always validate user inputs
-- Use HTTPS for all data transmission
-- Regularly scan for security vulnerabilities
+4. **Include Examples**
+   - ❌ "Make it look professional"
+   - ✅ "Style like a professional SaaS application with blue primary color and clean spacing"
 
-**Performance Optimization**:
-- Optimize images and media files
-- Minimize third-party integrations
-- Test on various devices and connection speeds
-- Monitor and address performance regressions
+5. **Request Validation**
+   - ❌ "Add validation"
+   - ✅ "Add form validation that checks for valid email format and required fields with user-friendly error messages"
+
+### Common Pitfalls and Solutions
+
+| Pitfall | Solution |
+|---------|----------|
+| **Scope Creep** | Stick to your PRD, resist adding "just one more feature" |
+| **Skipping Tests** | Test after each feature, not at the end |
+| **Ignoring Performance** | Check Lighthouse scores regularly |
+| **Poor Documentation** | Save successful prompts and important decisions |
+| **No User Testing** | Even 2-3 testers are better than none |
+| **Hardcoded Data** | Always use variables and configuration |
+| **Missing Error Handling** | Add user-friendly error messages everywhere |
+
+### Building Your Prompt Library
+
+Keep a document with prompts that work well:
+
+```markdown
+MY SUCCESSFUL PROMPTS
+
+FEATURE ADDITION:
+"Add [feature] that [does X] while maintaining all current functionality and mobile responsiveness"
+
+BUG FIXING:
+"Fix [issue]: Expected [behavior], but getting [actual]. Console shows [error]. Please fix while keeping all features working."
+
+PERFORMANCE:
+"Optimize for Lighthouse performance score above 80. Current issues: [list]. Maintain all functionality."
+
+STYLING:
+"Update styling to be more [adjective] with [specific changes] while keeping responsive design intact."
+```
 
 ### Success Metrics
 
-**Technical Success Indicators**:
-- Lighthouse Performance Score > 80
-- Zero critical security vulnerabilities
-- WAVE accessibility audit with minimal errors
-- Load time under 3 seconds on mobile
+#### **Technical Success**
+- All PRD features implemented ✓
+- Lighthouse scores meet targets ✓
+- No critical bugs ✓
+- Works on mobile devices ✓
 
-**Business Success Indicators**:
-- Users can complete core tasks without assistance
-- Low bounce rate and high engagement
-- Positive user feedback and ratings
-- Achievement of initial business objectives
+#### **User Success**
+- Users complete tasks without help ✓
+- Positive feedback received ✓
+- Users would recommend to others ✓
+- Solves the intended problem ✓
+
+#### **Learning Success**
+- You understand the basic structure ✓
+- Can make simple modifications ✓
+- Know how to deploy updates ✓
+- Can troubleshoot basic issues ✓
+
+***
+## Conclusion
+
+Vibe coding democratizes software development, enabling anyone with an idea to build functional applications. By following this structured approach, you can create secure, accessible, and performant applications without traditional coding skills.
+
+### Key Takeaways
+
+1. **Start Small**: Your first app doesn't need to be perfect
+2. **Test Often**: Catch issues early when they're easier to fix
+3. **Listen to Users**: Their feedback is your most valuable asset
+4. **Document Everything**: Future you will thank present you
+5. **Keep Learning**: Each project makes you better
+
+### Your Journey Forward
+
+**Week 1-2**: Build your first simple application
+**Month 1**: Complete your MVP and get user feedback
+**Month 2-3**: Iterate based on feedback and add features
+**Month 4+**: Decide whether to continue with vibe coding or transition to professional development
+
+### Remember
+
+- **Vibe coding is a tool**, not a replacement for all development
+- **Perfect for prototypes**, great for small applications
+- **Security and performance matter**, even for simple apps
+- **User feedback is gold**, collect it early and often
+- **You can build useful things**, regardless of technical background
+
+---
 
 ### Getting Help
 
@@ -1203,15 +1228,49 @@ This systematic approach ensures your vibe-coded application continues to serve 
 - Large-scale user management needs
 - Integration with enterprise systems
 - Compliance with industry regulations
+***
 
-## Conclusion
+## Appendices
 
-Vibe coding enables Product Owners to rapidly prototype and validate ideas without traditional development skills. By following this structured workflow and using the recommended tools, you can build secure, accessible, and performant applications while maintaining professional software development standards.
+### Appendix A: Glossary of Terms
 
-Remember that vibe coding is most effective for MVPs, prototypes, and small to medium-scale applications. As your needs grow and become more complex, consider transitioning to traditional development approaches with professional developers.
+- **API**: Application Programming Interface - how different software talks to each other
+- **Deployment**: Making your application available on the internet
+- **Local Storage**: Browser's way of saving data on user's computer
+- **PRD**: Product Requirements Document - your application's blueprint
+- **Responsive**: Design that works on all screen sizes
+- **UI/UX**: User Interface/User Experience - how your app looks and feels
+- **Validation**: Checking that user input is correct and safe
+- **Wireframe**: Basic visual outline of your application
 
-The key to success is thorough planning, systematic testing, and regular maintenance. Start small, test frequently, and iterate based on user feedback to build applications that truly serve your users' needs.
+### Appendix B: Resources and Links
+
+**AI Coding assistants**
+- Bolt.new: [bolt.new](https://bolt.new)
+- Lovable AI: [lovable.dev](https://lovable.dev)
+- Replit: [replit.com/](https://replit.com/)
+- ChatGPT: [chat.openai.com](https://chat.openai.com)
+- Claude: [claude.ai](https://claude.ai)
+- Google Gemini: [gemini.google.com](https://gemini.google.com)
+
+**Testing Tools**
+- Lighthouse: Built into Chrome DevTools
+- WAVE: [wave.webaim.org](https://wave.webaim.org)
+- Pagespeed: [Pagespeed](https://pagespeed.web.dev/)
+- CodePen: [codepen.io](https://codepen.io)
+
+**Deployment Platforms**
+- Netlify: [netlify.com](https://netlify.com)
+- Vercel: [vercel.com](https://vercel.com)
+- GitHub Pages: [pages.github.com](https://pages.github.com)
+
+**Learning Resources**
+- MDN Web Docs: [developer.mozilla.org](https://developer.mozilla.org)
+- W3Schools: [w3schools.com](https://w3schools.com)
+- FreeCodeCamp: [freecodecamp.org](https://freecodecamp.org)
 
 ---
 
-*This handbook is designed to evolve with the rapidly changing vibe coding landscape. Regular updates will incorporate new tools, techniques, and best practices as they emerge.*
+*This handbook is designed to evolve with the rapidly changing AI landscape. Version 1.0 - Updated for 2025*
+
+*Remember: The goal isn't to become a professional developer overnight. It's to empower you to build useful applications that solve real problems. Start small, be patient with yourself, and celebrate each working feature as a victory.*

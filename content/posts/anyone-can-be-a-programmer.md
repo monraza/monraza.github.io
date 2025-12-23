@@ -18,6 +18,8 @@ At first glance, this seems revolutionary, a leap in software programming. But i
 
 ## Evolution of Software Programming
 
+{{< figure src="/img/programming-evolution.png" alt="Programming Evolution" class="mx-auto my-0 rounded-md" >}}
+
 In the beginning, everything needs to written in binary sequences of 1s and 0s. Early programmers had to write instructions like `10110000 01100001`, which meant "put the number 97 in this specific memory location." Every program was an exercise in extreme precision and patience.
 
 Assembly language was our first real abstraction, replacing binary with readable instructions. `MOV AX, 97` made more sense than its binary equivalent. Still, creating anything useful required hundreds of these low-level commands. It was powerful but demanded deep technical knowledge.

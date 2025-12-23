@@ -25,6 +25,10 @@ As I have mentioned in this article [Anyone Can Be a Programmer](/posts/anyone-c
 
 
 ## How to Transform Vibe Coding into Engineering
+
+{{< figure src="/img/vibe-coding.png" alt="Vibe Coding Framework" class="mx-auto my-0 rounded-md" >}}
+
+
 ### Follow Software Development Framework
 Follow each phase systematically to avoid the pitfalls of unstructured vibe coding.
 - **Planning** - Requirements documentation and PRD creation 
@@ -93,9 +97,9 @@ Bolt.new provides everything in one interface:
 - Top right: Deploy Button, One-click to make your app live
 ****
    
-
-#
 # Implementation Guide
+
+{{< figure src="/img/vibe-coding-sdlc.png" alt="SDLC Framework" class="mx-auto my-0 rounded-md" >}}
 
 ## Phase 1: Planning and Requirements
 
@@ -1108,9 +1112,9 @@ Priority: [Critical/Major/Minor]
 Please fix this issue while maintaining all other functionality.
 ```
 ***
-## Best Practices and Tips
+# Best Practices and Tips
 
-### Effective Prompting Strategies
+## Effective Prompting Strategies
 
 #### **The Five Principles of Good Prompts**
 
@@ -1134,7 +1138,7 @@ Please fix this issue while maintaining all other functionality.
    - ❌ "Add validation"
    - ✅ "Add form validation that checks for valid email format and required fields with user-friendly error messages"
 
-### Common Pitfalls and Solutions
+## Common Pitfalls and Solutions
 
 | Pitfall | Solution |
 |---------|----------|
@@ -1146,7 +1150,7 @@ Please fix this issue while maintaining all other functionality.
 | **Hardcoded Data** | Always use variables and configuration |
 | **Missing Error Handling** | Add user-friendly error messages everywhere |
 
-### Building Your Prompt Library
+## Building Your Prompt Library
 
 Keep a document with prompts that work well:
 
@@ -1166,7 +1170,7 @@ STYLING:
 "Update styling to be more [adjective] with [specific changes] while keeping responsive design intact."
 ```
 
-### Success Metrics
+## Success Metrics
 
 #### **Technical Success**
 - All PRD features implemented ✓
@@ -1187,11 +1191,11 @@ STYLING:
 - Can troubleshoot basic issues ✓
 
 ***
-## Conclusion
+# Conclusion
 
 Vibe coding democratizes software development, enabling anyone with an idea to build functional applications. By following this structured approach, you can create secure, accessible, and performant applications without traditional coding skills.
 
-### Key Takeaways
+## Key Takeaways
 
 1. **Start Small**: Your first app doesn't need to be perfect
 2. **Test Often**: Catch issues early when they're easier to fix
@@ -1199,7 +1203,7 @@ Vibe coding democratizes software development, enabling anyone with an idea to b
 4. **Document Everything**: Future you will thank present you
 5. **Keep Learning**: Each project makes you better
 
-### Your Journey Forward
+## Your Journey Forward
 
 **Week 1-2**: Build your first simple application
 **Month 1**: Complete your MVP and get user feedback
@@ -1216,7 +1220,7 @@ Vibe coding democratizes software development, enabling anyone with an idea to b
 
 ---
 
-### Getting Help
+## Getting Help
 
 **Community Resources**:
 - Tool-specific documentation and tutorials
@@ -1231,9 +1235,9 @@ Vibe coding democratizes software development, enabling anyone with an idea to b
 - Compliance with industry regulations
 ***
 
-## Appendices
+# Appendices
 
-### Appendix A: Glossary of Terms
+## Appendix A: Glossary of Terms
 
 - **API**: Application Programming Interface - how different software talks to each other
 - **Deployment**: Making your application available on the internet
@@ -1244,7 +1248,7 @@ Vibe coding democratizes software development, enabling anyone with an idea to b
 - **Validation**: Checking that user input is correct and safe
 - **Wireframe**: Basic visual outline of your application
 
-### Appendix B: Resources and Links
+## Appendix B: Resources and Links
 
 **AI Coding assistants**
 - Bolt.new: [bolt.new](https://bolt.new)

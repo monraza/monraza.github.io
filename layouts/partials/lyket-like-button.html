@@ -1,0 +1,73 @@
+{{/* Lyket Like Button */}}
+{{- if not (.Params.noLike | default false) }}
+<div class="lyket-wrapper flex items-center text-xl">
+  <div
+    data-lyket-type="like"
+    data-lyket-namespace="blog-posts"
+    data-lyket-id="{{ .Title | urlize }}"
+    data-lyket-color-primary="rgba(var(--color-primary-500),var(--tw-bg-opacity,1))"
+    data-lyket-color-background="rgba(var(--color-neutral-300),var(--tw-bg-opacity,1))"
+    data-lyket-color-text="currentColor"
+    data-lyket-color-icon="currentColor"
+    data-lyket-show-counter-from="1"
+  ></div>
+</div>
+<style>
+/* Container layout */
+.lyket-wrapper [data-lyket-id] {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Button size - match sharing buttons (2.4rem with p-1) */
+.lyket-wrapper button {
+  width: 2.4rem !important;
+  height: 2.4rem !important;
+  min-width: 2.4rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem !important;
+  margin: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon size - match sharing buttons (text-xl = 1.25rem) */
+.lyket-wrapper svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Counter text style */
+.lyket-wrapper [data-lyket-id] > div:last-child {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ========== LIGHT THEME ========== */
+/* Unpressed: bg-neutral-300 (#d4d4d8), icon text-neutral-700 (#3f3f46) */
+.lyket-wrapper button:hover {
+  background-color: rgba(var(--color-primary-500),var(--tw-bg-opacity,1)) !important;
+  color: rgba(var(--color-neutral),var(--tw-text-opacity,1))
+}
+
+
+/* ========== DARK THEME ========== */
+/* Unpressed: bg-neutral-700 (#3f3f46), icon text-neutral-300 (#d4d4d8) */
+.dark .lyket-wrapper button {
+  --tw-text-opacity: 1;
+  --tw-bg-opacity: 1;
+  color: rgba(var(--color-neutral-300),var(--tw-text-opacity,1));
+  background-color: rgba(var(--color-neutral-700),var(--tw-bg-opacity,1))
+}
+
+.dark .lyket-wrapper button:hover {
+  --tw-text-opacity: 1;
+  --tw-bg-opacity: 1;
+  color: rgba(var(--color-neutral-800),var(--tw-text-opacity,1));
+  background-color: rgba(var(--color-primary-400),var(--tw-bg-opacity,1))
+}
+
+</style>
+{{- end }}

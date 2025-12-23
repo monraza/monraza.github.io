@@ -1,6 +1,6 @@
-baseURL = 'https://github.com/monraza/monraza.github.io'
+baseURL = 'https://monisraza.com'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Monis Ben Raza'
 theme = 'congo'
 
 googleAnalytics = 'G-58GKGRKG4N'

@@ -1,7 +1,7 @@
 ---
 title: "Easy and Secure OpenClaw Deployment Guide"
 date: 2026-02-15T10:00:00Z
-draft: true
+draft: false
 summary: ""
 categories: ["AI & Programming"]
 tags: ["ai", "programming", "natural-language", "productivity", "audio", "video"]
@@ -348,12 +348,37 @@ Everything's ready. Time to deploy — this is where it all comes together.
 
 Click the button for your preferred AWS region:
 
-| Region | Location | Launch Button |
-|--------|----------|---------------|
-| us-east-1 | N. Virginia | [![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml) |
-| us-west-2 | Oregon | [![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml) |
-| eu-west-1 | Ireland | [![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml) |
-| ap-southeast-1 | Singapore | [![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml) |
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Location</th>
+      <th>Launch</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; padding: 2px 6px;">us-east-1</td>
+      <td style="vertical-align: middle; padding: 2px 6px;">N. Virginia</td>
+      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle; padding: 2px 6px;">us-west-2</td>
+      <td style="vertical-align: middle; padding: 2px 6px;">Oregon</td>
+      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle; padding: 2px 6px;">eu-west-1</td>
+      <td style="vertical-align: middle; padding: 2px 6px;">Ireland</td>
+      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle; padding: 2px 6px;">ap-southeast-1</td>
+      <td style="vertical-align: middle; padding: 2px 6px;">Singapore</td>
+      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
+    </tr>
+  </tbody>
+</table>
 
 > **Note:** Choose a region close to you for best performance. If your region isn't listed, you can manually upload the template (see [Manual Upload](#manual-upload) below).
 
@@ -446,15 +471,14 @@ Once the status shows CREATE_COMPLETE, you can grab your connection details.
 
 With your server up and your connection info saved, let's make sure everything actually works.
 
-## Step 10: Thats it. Time to Test Your Bot!
+## Step 10: Test Your Bot!
 
-Your bot is now live! Your Telegram user ID is already allowlisted, so no pairing is needed.
+Your bot is now live! Your Telegram user ID is already allowlisted, so no pairing is needed. Your bot would only respond to messages from your telegram id.
 
 1. **Open Telegram**
 2. **Find your bot** (the one you created with @BotFather)
-3. **Click on `Start` button**
-4. **Send a message:** `Hello!`
-5. **Your bot should respond!**
+3. **Click on `Start` button** OR Send a message:** `Hello!`
+4. **Your bot should respond!**
 
 > It might take few seconds for the bot to respond the first time. Subsequent interactions will be immediate.<br/>**Bot not responding?** Check the [Troubleshooting](#troubleshooting) section below.
 
@@ -463,7 +487,7 @@ Your bot is now live! Your Telegram user ID is already allowlisted, so no pairin
 
 ---
 
-Good job on doing the setup! Here's how your day-to-day interaction with the bot will look.
+Good job on completing the setup! Here's how your day-to-day interaction with the bot will look.
 
 ## Daily Usage
 
@@ -473,6 +497,7 @@ Open Telegram → Message your bot → Get instant response
 ### Check Bot Status or Actions:
 - Message your bot: `What's your status?`
 - Message your bot: `What all can you do for me?`
+- Message your bot: `What the weather like?`
 
 ### Admin Tasks Through Telegram Bot:
 Message your bot in natural language to install or update a skill/tool, or use `/commands` for specific commands.
@@ -685,17 +710,29 @@ To reduce costs:
 
 
 ### Free OpenRouter Models:
-| # | Name | Slug | Tool calling | Rate Limit | Data Policy | Review |
-|---|------|--------------------|-------|-------------|--------|--------|
-| 1 | StepFun: Step 3.5 Flash (free) | `stepfun/step-3.5-flash:free` | Yes | Generous | No Training (OR) | Exceptional 196B MoE; tops AIME 2025 math and coding benchmarks |
-| 2 | Arcee AI: Trinity Large Preview (free) | `arcee-ai/trinity-large-preview:free` | Yes | Generous | No Training (OR), No Prompt Retention | Competitive 400B MoE rivaling Llama 4 Maverick; excels at creative writing |
-| 3 | OpenAI: gpt-oss-120b (free) | `openai/gpt-oss-120b:free` | Yes | Limited | No Training (OR) | OpenAI's open-weight flagship; near o4-mini reasoning with strong coding |
-| 4 | Z.ai: GLM 4.5 Air (free) | `z-ai/glm-4.5-air:free` | Yes | Limited | No Training (OR), No Prompt Retention | Strong tool-use/coding model; beats Gemini Pro 2.5 on function calling |
-| 5 | Qwen: Qwen3 4B (free) | `qwen/qwen3-4b:free` | Yes | Limited | No Training (OR), No Prompt Retention | Rivals Qwen2.5-72B performance; remarkably strong math/code for 4B |
-| 6 | Mistral: Mistral Small 3.1 24B (free) | `mistralai/mistral-small-3.1-24b-instruct:free` | Yes | Limited | No Training (OR), No Prompt Retention | Best-in-class efficiency at 24B; rivals models 3x larger |
-| 7 | Meta: Llama 3.3 70B Instruct (free) | `meta-llama/llama-3.3-70b-instruct:free` | Yes | Limited | No Training (OR) | Reliable workhorse matching Llama 3.1 405B; excellent all-around |
-| 8 | DeepSeek: R1 0528 (free) | `deepseek/deepseek-r1-0528:free` | No | Limited | No Training (OR), No Prompt Retention | Near o3-level reasoning with 45% fewer hallucinations than original R1 |
-| 9 | Google: Gemma 3 27B (free) | `google/gemma-3-27b-it:free` | No | Limited | No Training (OR), No Prompt Retention | Beats Gemini 1.5 Pro on some benchmarks; best Gemma 3 for reasoning |
+
+<style>
+.openrouter-table th:nth-child(3) { width: 20%; }
+.openrouter-table th:nth-child(4) { width: 35%; }
+</style>
+
+<div class="openrouter-table">
+
+| # | Name | Slug | Details |
+|---|------|------|---------|
+| 1 | StepFun: Step 3.5 Flash (free) <br/> Exceptional 196B MoE; tops AIME 2025 math and coding benchmarks | `stepfun/step-3.5-flash:free` | Tool Calling ✅ <br/> Generous Rate Limit ✅ <br/> No Training ✅ <br/> No Training (OR) ✅ <br/> No Prompt Retention ❌ <br/> No Publishing ✅ |
+| 2 | Arcee AI: Trinity Large Preview (free) <br/> Competitive 400B MoE rivaling Llama 4 Maverick; excels at creative writing | `arcee-ai/trinity-large-preview:free` | Tool Calling ❌ <br/> Generous Rate Limit ✅ <br/> No Training ✅ <br/> No Training (OR) ✅ <br/> No Prompt Retention ✅ <br/> No Publishing ✅ |
+| 3 | OpenAI: gpt-oss-120b (free) <br/> OpenAI's open-weight flagship; near o4-mini reasoning with strong coding | `openai/gpt-oss-120b:free` | Tool Calling ✅ <br/> Generous Rate Limit ❌ <br/> No Training ❌ <br/> No Training (OR) ✅ <br/> No Prompt Retention ❌ <br/> No Publishing ❌ |
+| 4 | Z.ai: GLM 4.5 Air (free) <br/> Strong tool-use/coding model; beats Gemini Pro 2.5 on function calling | `z-ai/glm-4.5-air:free` | Tool Calling ✅ <br/> Generous Rate Limit ❌ <br/> No Training ✅ <br/> No Training (OR) ✅ <br/> No Prompt Retention ✅ <br/> No Publishing ✅ |
+| 5 | Qwen: Qwen3 4B (free) <br/> Rivals Qwen2.5-72B performance; remarkably strong math/code for 4B | `qwen/qwen3-4b:free` | Tool Calling ✅ <br/> Generous Rate Limit ❌ <br/> No Training ✅ <br/> No Training (OR) ✅ <br/> No Prompt Retention ✅ <br/> No Publishing ✅ |
+| 6 | Mistral: Mistral Small 3.1 24B (free) <br/> Best-in-class efficiency at 24B; rivals models 3x larger | `mistralai/mistral-small-3.1-24b-instruct:free` | Tool Calling ✅ <br/> Generous Rate Limit ❌ <br/> No Training ✅ <br/> No Training (OR) ✅ <br/> No Prompt Retention ✅ <br/> No Publishing ✅ |
+| 7 | Meta: Llama 3.3 70B Instruct (free) <br/> Reliable workhorse matching Llama 3.1 405B; excellent all-around | `meta-llama/llama-3.3-70b-instruct:free` | Tool Calling ✅ <br/> Generous Rate Limit ❌ <br/> No Training ❌ <br/> No Training (OR) ✅ <br/> No Prompt Retention ❌ <br/> No Publishing ❌ |
+| 8 | DeepSeek: R1 0528 (free) <br/> Near o3-level reasoning with 45% fewer hallucinations than original R1 | `deepseek/deepseek-r1-0528:free` | Tool Calling ❌ <br/> Generous Rate Limit ❌ <br/> No Training ✅ <br/> No Training (OR) ✅ <br/> No Prompt Retention ✅ <br/> No Publishing ✅ |
+| 9 | Google: Gemma 3 27B (free) <br/> Beats Gemini 1.5 Pro on some benchmarks; best Gemma 3 for reasoning | `google/gemma-3-27b-it:free` | Tool Calling ❌ <br/> Generous Rate Limit ❌ <br/> No Training ✅ <br/> No Training (OR) ✅ <br/> No Prompt Retention ❌ (55d) <br/> No Publishing ✅ |
+
+</div>
+
+> **Legend:** <br/> ✅ = privacy-friendly | ❌ = privacy concern | (55d) = retained for 55 days | (OR) - Open Router
 
 ### Money-saving tips:
 - Stop EC2 instance when not using

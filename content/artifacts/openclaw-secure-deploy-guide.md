@@ -4,7 +4,7 @@ date: 2026-02-15T10:00:00Z
 lastmod: 2026-02-15T10:00:00Z
 draft: false
 summary: "A step-by-step guide to deploy OpenClaw AI agent on AWS with secure infrastructure, available 24/7 via Telegram. No coding experience needed."
-description: "Learn how to deploy a self-hosted AI agent on AWS using OpenClaw and CloudFormation. This beginner-friendly guide covers secure setup, Telegram integration, free LLM options via OpenRouter, and full cost breakdown — no coding required."
+description: "Learn how to deploy a self-hosted AI agent on AWS using OpenClaw and CloudFormation. This beginner-friendly guide covers secure setup, Telegram integration, free LLM options via OpenRouter, and full cost breakdown - no coding required."
 categories: ["AI & Programming"]
 tags: ["ai", "openclaw", "aws", "deployment", "telegram", "cloudformation", "self-hosted", "chatbot", "agent"]
 keywords: ["deploy AI agent AWS", "OpenClaw setup guide", "self-hosted AI assistant", "Telegram AI bot", "AWS CloudFormation agent", "free AI agent hosting", "OpenRouter free models"]
@@ -40,7 +40,7 @@ This guide walks you through everything you need, to deploy [OpenClaw](https://o
 
 ---
 
-Now that you know what to expect, let's dive into the setup. We'll go step by step — starting with your AWS account, then gathering the keys and tokens needed for deployment.
+Now that you know what to expect, let's dive into the setup. We'll go step by step - starting with your AWS account, then gathering the keys and tokens needed for deployment.
 
 ## Step 1: AWS Account Setup (5-10 minutes)
 
@@ -90,7 +90,7 @@ The SSH key is your secure "password" to access the server. Without it, no one (
    - **Type:** RSA
    - **Format:** `.pem` (for Mac/Linux) or `.ppk` (for Windows with PuTTY)
 6. Click **"Create key pair"**
-7. **The file downloads automatically — SAVE IT SECURELY**
+7. **The file downloads automatically - SAVE IT SECURELY**
 
 > **IMPORTANT:** You cannot re-download this file. Store it in a secure folder on your computer.
 
@@ -232,7 +232,7 @@ Spending Limit: $______/month
 
 ---
 
-You've got the AI brain sorted out — now let's create the Telegram bot that will be your interface to it.
+You've got the AI brain sorted out , now let's create the Telegram bot that will be your interface to it.
 
 ## Step 4: Create Telegram Bot (3 minutes)
 
@@ -345,9 +345,11 @@ Make a note of all of following before deploying:
 
 ---
 
-Everything's ready. Time to deploy — this is where it all comes together.
+Everything's ready. Time to deploy, this is where it all comes together.
 
 ## Step 7: Launch the Stack
+
+> **⚠️ Disclaimer**: This template is designed for personal AWS accounts with a single user. It is not intended for organizational, enterprise, or shared AWS environments. By deploying this stack, you acknowledge and accept this limitation.
 
 Click the button for your preferred AWS region:
 
@@ -363,22 +365,22 @@ Click the button for your preferred AWS region:
     <tr>
       <td style="vertical-align: middle; padding: 2px 6px;">us-east-1</td>
       <td style="vertical-align: middle; padding: 2px 6px;">N. Virginia</td>
-      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
+      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml" target="_blank"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
     </tr>
     <tr>
       <td style="vertical-align: middle; padding: 2px 6px;">us-west-2</td>
       <td style="vertical-align: middle; padding: 2px 6px;">Oregon</td>
-      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
+      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml" target="_blank"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
     </tr>
     <tr>
       <td style="vertical-align: middle; padding: 2px 6px;">eu-west-1</td>
       <td style="vertical-align: middle; padding: 2px 6px;">Ireland</td>
-      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
+      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml" target="_blank"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
     </tr>
     <tr>
       <td style="vertical-align: middle; padding: 2px 6px;">ap-southeast-1</td>
       <td style="vertical-align: middle; padding: 2px 6px;">Singapore</td>
-      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
+      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml" target="_blank"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
     </tr>
   </tbody>
 </table>
@@ -554,8 +556,8 @@ ssh -i C:\Users\YourName\.ssh\openclaw-key.pem -L 18789:localhost:18789 ubuntu@Y
 - 4.3 Status should turn to **Connected**
 
 **5:** Navigate using the sidebar:
-- **Agents** — Update agent configurations, skills, etc.
-- **Chat** — Chat with the agent to verify your changes
+- **Agents**: Update agent configurations, skills, etc.
+- **Chat**: Chat with the agent to verify your changes
 
 **6:** When done, always close the ssh connection by pressing `Ctrl+C` in the terminal to close it securely.
 
@@ -679,7 +681,7 @@ To reduce costs:
 - Contact AWS support if verification fails
 
 ### "I lost my SSH key file"
-- You cannot recover it — create a new key pair
+- You cannot recover it, create a new key pair
 - Delete the old one from AWS Console to avoid confusion
 
 ### "BotFather says username is taken"

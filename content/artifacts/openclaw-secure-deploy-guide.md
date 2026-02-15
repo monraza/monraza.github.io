@@ -365,22 +365,22 @@ Click the button for your preferred AWS region:
     <tr>
       <td style="vertical-align: middle; padding: 2px 6px;">us-east-1</td>
       <td style="vertical-align: middle; padding: 2px 6px;">N. Virginia</td>
-      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
+      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml" target="_blank"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
     </tr>
     <tr>
       <td style="vertical-align: middle; padding: 2px 6px;">us-west-2</td>
       <td style="vertical-align: middle; padding: 2px 6px;">Oregon</td>
-      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
+      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml" target="_blank"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
     </tr>
     <tr>
       <td style="vertical-align: middle; padding: 2px 6px;">eu-west-1</td>
       <td style="vertical-align: middle; padding: 2px 6px;">Ireland</td>
-      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
+      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml" target="_blank"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
     </tr>
     <tr>
       <td style="vertical-align: middle; padding: 2px 6px;">ap-southeast-1</td>
       <td style="vertical-align: middle; padding: 2px 6px;">Singapore</td>
-      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
+      <td style="vertical-align: middle; padding: 2px 6px;"><a href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=openclaw&templateURL=https://openclaw-deploy-cf.s3.eu-west-1.amazonaws.com/openclaw-cloudformation.yaml" target="_blank"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a></td>
     </tr>
   </tbody>
 </table>

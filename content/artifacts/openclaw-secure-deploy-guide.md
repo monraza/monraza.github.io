@@ -488,7 +488,7 @@ Your bot is now live! Your Telegram user ID is already allowlisted, so no pairin
 > It might take few seconds for the bot to respond the first time. Subsequent interactions will be immediate.<br/>**Bot not responding?** Check the [Troubleshooting](#troubleshooting) section below.
 
 
-**Congratulations!** You now have a secure, self-hosted AI assistant running 24/7 which is available to you via Telegram! Make it do some stuffs!
+**Congratulations!** You now have a secure, self-hosted AI assistant running 24/7, accessible anytime through Telegram. Start putting it to work!
 
 ---
 

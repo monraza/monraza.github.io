@@ -21,6 +21,9 @@ This guide walks you through everything you need, to deploy [OpenClaw](https://o
 - **Available 24/7 via Telegram**: your personal AI assistant lives in your messaging app, ready to respond anytime from any device.
 
 
+{{< figure src="/img/openclaw-secure-deploy.png" alt="OpenClaw Secure Deployment" class="mx-auto my-0 rounded-md" >}}
+
+
 ### **Time to up and running** 
    ~25-30 minutes (15-20 min account setup + 5-8 min deployment)
 
